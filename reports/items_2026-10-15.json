@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-15",
+  "total": 20,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/search/?searchtype=all&query=cat%3Aq-fin.%2A"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://arxiv.org/search/?searchtype=all&query=%28all%3A%22trading%22%2BOR%2Ball%3A%22financial%20market%22%29%2BAND%2B%28cat%3Acs.LG%2BOR%2Bcat%3Acs.CL%29"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "E-Backtesting Expected Shortfall without Value-at-Risk Forecasts under Time-series Models",
+      "url": "https://arxiv.org/abs/2610.17681v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T04:06:36+00:00",
+      "summary_raw": "Expected Shortfall (ES) measures the average size of tail losses. Its sequential backtests typically also require a Value-at-Risk (VaR) forecast. We develop two e-backtesting methods using only observed losses and ES forecasts: one for iid losses only and the other for time series under an AR-GARCH conditional VaR structure. Under the stated assumptions, both control false rejections at any stopping time. For the time-series method, validity requires a fixed parameter--quantile pair representing the conditional VaR path and a positive report margin. The time-series statistic takes an infimum o",
+      "score": 12,
+      "summary_cn": "本文提出两种不依赖 VaR 预测的 Expected Shortfall（ES）e-backtesting 方法：一种适用于独立同分布损失，另一种适用于 AR-GARCH 条件 VaR 结构下的时间序列损失。两种方法在所给假设下均能在任意停止时刻控制误拒率，时间序列版本的有效性依赖固定的参数-分位数对和正的报告边际。这是 e-value 检验框架在尾部风险回测中的最新推进。",
+      "why_cn": "ES 回测长期受困于必须同时预测 VaR，这套纯 ES 序列检验方法可直接改进风险模型验证与监管合规流程。",
+      "id": "b08e369dff2f",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "A GLE-LSV model with state-dependent leverage and colored noise",
+      "url": "https://arxiv.org/abs/2610.18706v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T16:53:43+00:00",
+      "summary_raw": "We study a local stochastic volatility (LSV) model in which the variance factor follows a generalized Langevin equation (GLE) with colored noise, and past returns act on variance through a memory kernel with state-dependent amplitudes. For kernels given by finite sums of exponentials, we prove existence, uniqueness, and non-explosion under a growth condition linking the volatility map to the potential. In a one-mode family with a polynomial potential, feedback through log returns can cause explosion exactly when the squared volatility factor grows faster than the restoring force. Under structu",
+      "score": 11,
+      "summary_cn": "研究一类局部随机波动率（LSV）模型，其方差因子服从带有色噪声的广义朗之万方程（GLE），历史收益通过状态依赖振幅的记忆核作用于方差。对指数和型记忆核证明了存在性、唯一性与不爆炸性，并刻画了多项式势单模族中反馈导致爆炸的精确条件。模型兼顾波动率聚簇、杠杆效应与粗糙路径特征。",
+      "why_cn": "有色噪声+记忆核的 LSV 模型为波动率衍生品定价和粗糙波动率建模提供了有严格理论保证的新工具。",
+      "id": "41febd18dbd4",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Risk Measures for the Climate Transition Age: Why Symmetric Risk Budgets are unlikely to mitigate two-dimensionally asymmetric Climate Change risks",
+      "url": "https://arxiv.org/abs/2610.18387v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T13:36:55+00:00",
+      "summary_raw": "The most widely used investment risk measures - variance, standard deviation, and tracking error - treat upside deviations as equally undesirable as downside losses. In stable markets with assumed symmetric return distributions, this simplification is potentially harmless. In the climate transition age, it is not. Climate risk is two-dimensionally asymmetric, across assets and over time. Both dimensions are negatively skewed against investors. Hence, climate transition investment strategies deliberately deviate from benchmarks that reflect an insufficiently decarbonising global economy. When f",
+      "score": 11,
+      "summary_cn": "文章指出方差、标准差、跟踪误差等主流风险度量对上行与下行偏离一视同仁，在气候转型时代这一对称假设不再成立。气候风险在资产截面上和时间维度上均呈二维不对称，且两个维度都对投资者负偏。因此对称风险预算难以缓释气候转型风险，转型投资策略需要有意识地偏离基准。",
+      "why_cn": "对做 ESG/气候因子配置的量化团队，这是对传统对称风险预算框架的系统性挑战，直接影响组合构建与风险预算设计。",
+      "id": "6e863ad68ec0",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Portfolio Decarbonization under Incomplete Carbon and Transition Information",
+      "url": "https://arxiv.org/abs/2610.18332v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T13:08:25+00:00",
+      "summary_raw": "We study dynamic portfolio decarbonization under incomplete information about firms' carbon intensities and the underlying transition state. The investor maximizes expected utility of terminal wealth net of a penalty on perceived cumulative financed emissions. Asset returns and carbon intensities depend on a stochastic transition factor, while the investor may need to infer the current transition state, its long-run mean and firms' carbon intensities from market observations and periodic noisy disclosures. The optimal strategy combines a Merton-type component with climate-dependent expected-re",
+      "score": 9,
+      "summary_cn": "研究碳强度与转型状态信息不完全下的动态组合脱碳问题：投资者在终端财富期望效用中扣除对累计融资碳排放感知值的惩罚。资产收益与碳强度依赖随机转型因子，投资者需从市场观测与周期性含噪披露中滤波推断转型状态。最优策略由 Merton 型成分与依赖气候状态的预期收益成分组合而成。",
+      "why_cn": "将滤波推断与脱碳组合优化统一在随机控制框架内，为碳约束下的主动管理提供了可落地的理论模板。",
+      "id": "d17ef1505bea",
+      "highlights": []
+    },
+    {
+      "title": "Designing Independent Variation: A Guided Iteration Methodology for Price Experiments in Short, Correlated Panels",
+      "url": "https://arxiv.org/abs/2610.17481v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-12T22:53:13+00:00",
+      "summary_raw": "Estimation error in short, correlated pricing panels is dominated by trajectory dispersion rather than sampling noise, creating an identification shortfall that only independently assigned variation can resolve. We propose a guided iteration methodology to decide how much variation to generate, where, and for how long: a cyclic price-perturbation scheme under a revenue-at-risk budget, framed as variance minimization over design-specific error covariances, analogous to portfolio selection. We establish four key results: (1) a closed-form minimum-variance combination rule; (2) proof that a conve",
+      "score": 8,
+      "summary_cn": "针对短面板、高相关的定价实验，作者指出估计误差主要由轨迹离散度而非抽样噪声主导，只有独立分配的变异才能弥补识别缺口。提出引导式迭代方法：在收入风险预算约束下做循环价格扰动，将其建模为对设计相关误差协方差的方差最小化问题，类比组合选择。给出了闭式最小方差组合规则等四项关键结果。",
+      "why_cn": "把实验设计转化为组合优化问题，对做 A/B 定价、因果推断的量化与数据团队有直接借鉴价值。",
+      "id": "5f4fa60ddc09",
+      "highlights": []
+    },
+    {
+      "title": "Discrete-Time Survival Modelling with Dynamic Industrial Graphs for Mortgage Credit Risk",
+      "url": "https://arxiv.org/abs/2610.18795v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T17:40:40+00:00",
+      "summary_raw": "Mortgage credit risk may exhibit dependence across economically connected areas, even when they are geographically distant. However, current models typically represent cross-area dependence through fixed geographical neighbourhoods, potentially overlooking economic connections that extend beyond physical proximity and evolve over time. These models may fail to capture shared risks among geographically distant but economically similar areas, and cannot describe a changing dependence of risk; it therefore risks retaining economically obsolete connections while omitting newly emerging ones. This ",
+      "score": 7,
+      "summary_cn": "房贷信用风险在经济关联区域间可能存在依赖，即便地理上相距遥远，而现有模型多以固定地理邻域刻画跨区域依赖。本文用动态产业图替代地理邻接，结合离散时间生存分析建模房贷违约，能捕捉地理遥远但经济相似区域的共同风险及其随时间的演化。避免保留过时经济关联、遗漏新兴关联的问题。",
+      "why_cn": "图结构+生存分析的动态信用风险建模思路，可迁移至组合信用风险、区域分散度评估等场景。",
+      "id": "3bba3347530f",
+      "highlights": []
+    },
+    {
+      "title": "How Well Do LLMs Perform in Peer Review? Evidence from Finance and Accounting",
+      "url": "https://arxiv.org/abs/2610.18435v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T14:11:35+00:00",
+      "summary_raw": "Referees increasingly use large language models (LLMs), while finance and accounting journals disagree about whether to allow it. We ask which part of a referee's job the models can do. GPT-4o, whose training data end before the 2024 conference season, referees the papers presented at the 2024 AFA and NBER finance meetings, and we compare its verdicts with publication in the top-three finance journals over the next two years. Papers the model scores one standard deviation higher are 44\\% more likely to be published, net of author reputation. The result is not driven by look-ahead bias, as the ",
+      "score": 7,
+      "summary_cn": "作者用 GPT-4o（训练截止早于 2024 会议季）匿名评审 2024 年 AFA 与 NBER 金融会议论文，并与随后两年顶刊发表结果对比。模型评分高一个标准差的论文发表概率高出 44%，且控制作者声誉后依然成立，排除了前瞻偏差。说明 LLM 已能完成审稿工作中相当核心的质量判别部分。",
+      "why_cn": "LLM 对金融研究质量的判别力被实证验证，提示其在研究筛选、文本信号提取等投研环节的实际可用性。",
+      "id": "44d5ddcb13d4",
+      "highlights": []
+    },
+    {
+      "title": "On integrability of local utility maximizing strategies",
+      "url": "https://arxiv.org/abs/2610.17915v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T08:07:02+00:00",
+      "summary_raw": "In stochastic control problems involving optimal portfolio choice, one often seeks an optimizer of some local criterion (dynamic programming value function) generated by some global criterion (e.g., expected utility). The local optimizer then typically acts as a stochastic integrand with respect to some multivariate stochastic process (e.g., asset prices). This paper takes a closer look at local criteria in the form of ``local expected utility''. Since the existence of the local optimizer can be established under very mild conditions, it is crucial to understand under what circumstances the lo",
+      "score": 7,
+      "summary_cn": "在含最优组合选择的随机控制问题中，动态规划常产生局部效用最大化子，其作为随机积分被积对象的性质至关重要。本文细究「局部期望效用」型局部准则：局部最优解的存在性在很弱条件下即可建立，关键在于弄清其何时可积。给出了局部效用最大化策略可积性的刻画条件。",
+      "why_cn": "这是组合选择理论的基础性澄清，对构建严谨的最优交易/配置模型有方法论意义。",
+      "id": "e26a53d9aec8",
+      "highlights": []
+    },
+    {
+      "title": "Structured SDEs for Realized GARCH: Continuous-Time Volatility Modelling and Component-Level Analysis",
+      "url": "https://arxiv.org/abs/2610.17732v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T05:11:12+00:00",
+      "summary_raw": "We propose a structured continuous-time stochastic volatility model for one-day-ahead integrated-variance forecasting. The model introduces a jointly evolving realized-measure state that feeds directly into latent variance dynamics, while correlated Brownian innovations capture return-linked dependence. Parameters are estimated through simulation-based predictive learning, and Monte Carlo simulation forecasts integrated variance. Across 17 equity indices, the proposed model shows strong out-of-sample performance relative to GARCH, GARCH-Itô, Realized GARCH, HAR, and HEAVY benchmarks under QLIK",
+      "score": 7,
+      "summary_cn": "提出用于提前一日预测积分方差的结构化连续时间随机波动率模型，引入联合演化的已实现测度状态直接馈入潜在方差动态，相关布朗运动刻画收益联动。参数用基于模拟的预测学习估计，蒙特卡洛模拟生成预测。在 17 个股票指数上相对 GARCH、GARCH-Itô、Realized GARCH、HAR、HEAVY 等基准展现出强劲的样本外表现。",
+      "why_cn": "波动率预测是期权定价与风险管理核心，该模型在 17 个指数上的样本外优势值得波动率交易者验证复现。",
+      "id": "9304e230b6e7",
+      "highlights": []
+    },
+    {
+      "title": "Energy Consumption Analysis of Discrete Diffusion and Autoregressive Language Models",
+      "url": "https://arxiv.org/abs/2610.19855v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-14T09:21:13+00:00",
+      "summary_raw": "As Large Language Models (LLMs) continue to scale, their energy consumption during inference has become a critical concern. While Autoregressive (AR) models are the industry standard, Diffusion Language Models (DLLMs) have emerged as a promising alternative capable of parallel token generation. In this paper, we perform a comparative energy benchmark of diffusion models (LLaDA-8B, Dream-7B) against AR counterparts (Llama-3.1-8B, Qwen-2.5-7B). We analyze the trade-offs between model architecture, KV-cache optimization, and Joules-per-token efficiency. Our results show that at longer sequences (",
+      "score": 7,
+      "summary_cn": "对扩散语言模型（LLaDA-8B、Dream-7B）与自回归模型（Llama-3.1-8B、Qwen-2.5-7B）做了推理能耗对比基准，分析架构、KV-cache 优化与每 token 焦耳效率的权衡。结果显示在长序列下扩散模型的并行生成展现能效优势，而短序列下自回归+KV-cache 仍更高效。为 LLM 推理部署的能耗优化提供了量化依据。",
+      "why_cn": "推理成本直接决定 LLM 投研应用的规模化经济性，能耗基准有助于量化团队选择部署架构。",
+      "id": "bfb812696c46",
+      "highlights": []
+    },
+    {
+      "title": "Common Signals, Spurious Cross-Excitation, and Identification in Multivariate Hawkes Processes",
+      "url": "https://arxiv.org/abs/2610.19428v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-14T02:25:12+00:00",
+      "summary_raw": "Multivariate Hawkes models are widely used to measure endogenous interactions in event data, but latent common signals can generate apparent excitation even without structural interaction. We characterize the resulting linear projection and construct stable, nonnegative Hawkes processes that share the mean intensity and Bartlett spectrum of common-signal models despite having different excitation mechanisms. This establishes a concrete form of second-order non-identification. We derive integrated third-order cumulants for Hawkes processes with Cox immigration and establish generic local identi",
+      "score": 6,
+      "summary_cn": "多元 Hawkes 模型广泛用于度量事件数据的内生交互，但潜在共同信号可在无结构交互时产生表观激励。作者刻画了由此产生的线性投影，构造出与共同信号模型共享均值强度和 Bartlett 谱、但激励机制不同的稳定非负 Hawkes 过程，确立了二阶不可识别性。并推导三阶累积量，建立 Cox 移民 Hawkes 过程的局部可识别性。",
+      "why_cn": "用 Hawkes 过程建模订单流/交易事件传染的量化团队需警惕：观察到的「交叉激励」可能只是共同信号的假象。",
+      "id": "179c0fe9cc12",
+      "highlights": []
+    },
+    {
+      "title": "Beyond Time Induction: Structured Conditional Neural Solvers for Parametric Stochastic-Volatility Pricing",
+      "url": "https://arxiv.org/abs/2610.19254v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T22:15:06+00:00",
+      "summary_raw": "Physics-informed neural networks provide a flexible framework for learning parametric PDE solution families without labeled data, yet preserving accurate derivatives across heterogeneous regimes remains challenging. Structured neural solvers offer compact representations, but restrictive conditional parameterizations can limit adaptation across the solution family. We introduce BeTINN, a structured conditional architecture extending time-induced modulation through multi-directional time-parameter conditioning and a joint residual pathway. We evaluate BeTINN on the Heston stochastic-volatility ",
+      "score": 6,
+      "summary_cn": "物理信息神经网络（PINN）可无标签学习参数化 PDE 解族，但跨异质机制保持导数精度仍具挑战。本文提出 BeTINN：一种结构化条件架构，通过多方向时间-参数条件化与联合残差通路扩展时间诱导调制。在 Heston 随机波动率定价上验证了该方法对参数化解族的适应能力与导数精度。",
+      "why_cn": "神经 PDE 求解器有望替代昂贵蒙特卡洛定价，Heston 案例的导数精度改善直接关系希腊字母计算可靠性。",
+      "id": "50053cd0e6f8",
+      "highlights": []
+    },
+    {
+      "title": "The Missile and the Toll: Two-Way Flow Through the Strait of Hormuz",
+      "url": "https://arxiv.org/abs/2610.18823v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-13T17:51:49+00:00",
+      "summary_raw": "Tolls for safe passage and attacks on shipping are usually treated as mutually exclusive: either ships pay or attacks happen. We argue they are complementary. In a Stackelberg escalation game for the Strait of Hormuz, the enforcer chooses an attack intensity and a toll schedule; the response is to pay, cross exposed, wait, reroute, or exit. Attacks create the willingness to pay; tolls harvest it. The model predicts asymmetry across trade forms: a toll where the cargo owner can pay and the vessel owner will consent, and none where either fails. Any such payment is clandestine, but the model's i",
+      "score": 6,
+      "summary_cn": "本文将霍尔木兹海峡的通行费与袭击建模为互补而非互斥：在 Stackelberg 升级博弈中，执法者选择袭击强度与通行费表，船方选择付费、冒险通过、等待、改道或退出。袭击创造支付意愿，通行费将其收割。模型预测贸易形式间的不对称：货主能付且船东同意处出现通行费，否则没有。",
+      "why_cn": "地缘政治博弈论模型直接关联油运、大宗商品定价与尾部风险，为宏观量化与商品交易者提供结构化分析框架。",
+      "id": "91497d1a79c4",
+      "highlights": []
+    },
+    {
+      "title": "Built to Survive the Waiting",
+      "url": "https://alphaarchitect.com/built-to-survive-the-waiting/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-08T15:52:00+00:00",
+      "summary_raw": "Most tail risk hedges fail in the quiet years, not the crash. Two documented cases and an eight-part due diligence framework for advisors. Built to Survive the Waiting was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 6,
+      "summary_cn": "大多数尾部风险对冲并非败于崩盘，而是死于平静年份的持续亏损。文章记录了两个案例，并为顾问提供八部分尽调框架，评估尾部对冲策略能否在漫长等待中存活。核心在于策略的持有成本结构与心理/资金耐力是否匹配。",
+      "why_cn": "尾部对冲的 carry 成本管理是每个做多波动率策略的生死问题，这套尽调框架可直接用于评估对冲方案。",
+      "id": "f7c8a5f75d3a",
+      "highlights": []
+    },
+    {
+      "title": "Global and Local Entropy Tests for STL Files Under IEEE-754 Validity Constraints",
+      "url": "https://arxiv.org/abs/2610.19852v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-14T09:19:58+00:00",
+      "summary_raw": "Shannon entropy is a standard measure of ciphertext randomness, evaluated either globally over the byte histogram of the entire ciphertext or locally as the average over non-overlapping blocks of ?xed size. While the global statistic captures only the overall byte distribution, the local statistic is also sensitive to non-randomness that is con?ned to parts of the ciphertext. Both measures are commonly assessed against reference values derived under the assumption of independent uniform bytes. However, STL encodes most numerical data as single-precision IEEE-754 ?oats, and format validity requ",
+      "score": 5,
+      "summary_cn": "Shannon 熵是密文随机性的标准度量，但 STL 文件以单精度 IEEE-754 浮点编码数值数据，格式有效性约束使字节远非独立均匀。本文在 IEEE-754 有效性约束下推导 STL 文件全局与局部熵检验的参考值，修正了基于独立均匀字节假设的传统评估。对格式化工件的随机性检验给出更严格的基准。",
+      "why_cn": "虽是安全/制造交叉领域，其「在约束下修正熵基准」的思路对金融数据异常检测与随机性检验有方法论借鉴。",
+      "id": "6f662b69c26e",
+      "highlights": []
+    },
+    {
+      "title": "OpenTWBench (Open Taiwan Benchmark): Taiwan-Domain Knowledge Evaluation for Large Language Models, and How the Measurement Apparatus Shapes the Score",
+      "url": "https://arxiv.org/abs/2610.19848v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-14T09:18:47+00:00",
+      "summary_raw": "We present OpenTWBench, an open evaluation suite for Taiwan-domain knowledge in large language models, built around two benchmarks. tw-exam-bench contains 255,854 four-option questions across 148 academic subjects, from fifteen years of Taiwan's national examinations published as open data by the Ministry of Examination; answer keys agree across 31,312 duplicated question groups at 99.91%, with all 27 disagreements accounted for. A reviewed second pass withdrew 2,180 items whose stems depend on a figure the text does not carry; all scores use the remaining 253,674. tw-formosa-bench contains 1,",
+      "score": 5,
+      "summary_cn": "发布台湾领域知识评测套件 OpenTWBench：tw-exam-bench 含 255,854 道四选一题，覆盖 148 个学科、源自十五年台湾国家考试开放数据；tw-formosa-bench 为补充基准。文章重点剖析测量装置本身（题目依赖图片、去重、题干清洗）如何塑造分数，展示评测构建的严谨流程。",
+      "why_cn": "评测设计对模型排名的敏感性分析，提醒用 LLM 做投研的团队：基准分数高度依赖评测构造方式。",
+      "id": "52d279aa19a6",
+      "highlights": []
+    },
+    {
+      "title": "A practical route to amorphous solid-state electrolyte structures by hybrid reverse Monte Carlo with foundation potentials",
+      "url": "https://arxiv.org/abs/2610.19846v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-14T09:14:58+00:00",
+      "summary_raw": "Amorphous alkali oxychlorides are fast ion conductors, but their atomic structure remains unresolved. Total scattering sums all partial pair correlations into one curve that has no unique inversion, so the structure must be modeled. Melt-quench molecular dynamics builds a model from the interatomic potential alone, and reverse Monte Carlo (RMC) builds one from the measurement alone. The two have rarely been compared with all else held fixed. We benchmark both routes and two hybrid schemes on amorphous \\ce{Li_{0.9}NbO_{0.9}Cl_{4.1}} against one neutron pair distribution function with one founda",
+      "score": 5,
+      "summary_cn": "无定形碱金属氧氯化物是快离子导体，但原子结构未明。本文以单一中子对分布函数为基准，系统对比熔淬分子动力学、反向蒙特卡洛（RMC）及两种混合方案（结合基础势），重建 Li0.9NbO0.9Cl4.1 的非晶结构。展示了基础势辅助混合 RMC 在材料逆向工程中的实用性。",
+      "why_cn": "基础模型+蒙特卡洛逆向工程的混合范式，与量化领域「先验模型+数据反演」的建模范式高度同构。",
+      "id": "6c3ce2d189c9",
+      "highlights": []
+    },
+    {
+      "title": "Does Empirical Finance Replicate? AI answers the question.",
+      "url": "https://alphaarchitect.com/empirical-finance/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-12T15:04:00+00:00",
+      "summary_raw": "Can a published result be reproduced using the original sample? And does the same result continue to hold when new data arrive? This paper separates those questions across an unusually large sample of empirical finance research. Does Empirical Finance Replicate? AI answers the question. was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 5,
+      "summary_cn": "本文区分两个问题：已发表结果能否用原始样本复现（reproduce），以及新数据到来后结果是否依然成立（replicate）。在异常庞大的实证金融研究样本上，用 AI 系统性地回答了这两个问题。为实证金融的可复制性危机提供了大规模量化证据。",
+      "why_cn": "因子/异象研究的可复制性直接决定量化策略研究的可靠性底线，AI 驱动的大规模复现方法论值得关注。",
+      "id": "0fcab6225e41",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/qlib] PR: fix(graph): fix typo 'lable' → 'label' in rank‑label‑ratio y‑axis title",
+      "url": "https://github.com/microsoft/qlib/pull/2336",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-12T23:46:37+00:00",
+      "summary_raw": "## Description ## Motivation and Context ## How Has This Been Tested? - [x] Pass the test by running: `pytest qlib/tests/test_all_pipeline.py` under upper directory of `qlib`. - [x] If you are adding a new feature, test on your own test scripts. ## Screenshots of Test Results (if appropriate): 1. Pi",
+      "score": 4,
+      "summary_cn": "微软 qlib 项目的一个小型修复 PR：修正 rank-label-ratio 图表 y 轴标题中的拼写错误（'lable' → 'label'）。已通过项目标准测试管线验证。属于常规维护性提交，无功能性变更。",
+      "why_cn": "虽是小修，但反映 qlib 这一主流 AI 量化平台仍在活跃维护，可持续跟进其功能演进。",
+      "id": "010f88fcbef4",
+      "highlights": []
+    },
+    {
+      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+      "source": "Last Week in AI (替代 The Batch)",
+      "side": "ai",
+      "published": "2026-10-09T05:06:58+00:00",
+      "summary_raw": "OpenAI publishes hundreds of math proofs from unreleased frontier model, Mistral and Reflection AI launch open-weight models to rival China, and more!",
+      "score": 4,
+      "summary_cn": "本期 AI 周报：OpenAI 公布了未发布前沿模型产生的数百份数学证明手稿；Mistral 与 Reflection AI 各推开放权重模型以与中国开源阵营竞争；另有一名安全研究员离职引发讨论。覆盖模型能力、开源格局与 AI 安全三条主线。",
+      "why_cn": "前沿模型数学推理能力的跃升与开源竞争格局变化，直接影响量化团队可选用的 LLM 工具链与成本结构。",
+      "id": "c01e31c5a3a4",
+      "highlights": []
+    }
+  ]
+}
