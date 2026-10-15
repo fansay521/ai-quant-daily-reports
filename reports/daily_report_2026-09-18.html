@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI × 量化交易前沿日报 — 2026-09-18</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --ink: #3d3730;
+    --ink-soft: #6b6259;
+    --accent: #b06a4f;
+    --accent-2: #4a6b5d;
+    --card: #ffffff;
+    --line: #e8e2d9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+      "Noto Sans CJK SC", "Source Han Sans SC", system-ui, -apple-system, sans-serif;
+    line-height: 1.75;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.report-head { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
+  header.report-head h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: 0.5px; }
+  header.report-head .meta { color: var(--ink-soft); font-size: 14px; }
+  header.report-head .meta b { color: var(--accent); }
+
+  .top3 {
+    background: linear-gradient(0deg, #f4efe8, #f4efe8);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0 36px;
+  }
+  .top3 h2 { margin: 0 0 10px; font-size: 17px; color: var(--accent); }
+  .top3 ol { margin: 0; padding-left: 20px; }
+  .top3 li { margin: 6px 0; font-size: 15px; }
+  .top3 a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .top3 a:hover { color: var(--accent); }
+  .top3 .src { color: var(--ink-soft); font-size: 12.5px; }
+
+  section.block { margin: 34px 0; }
+  section.block > h2 {
+    font-size: 20px;
+    color: var(--accent-2);
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 8px;
+    margin: 0 0 18px;
+  }
+  section.block > h2 .cnt { font-size: 13px; color: var(--ink-soft); font-weight: normal; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 0 0 14px;
+    box-shadow: 0 1px 2px rgba(61, 55, 48, 0.04);
+  }
+  .card h3 { margin: 0 0 8px; font-size: 16.5px; line-height: 1.5; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .badges { margin-bottom: 8px; font-size: 12px; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 1px 10px;
+    margin-right: 6px;
+    background: #f0ebe3;
+    color: var(--accent-2);
+    border: 1px solid var(--line);
+  }
+  .badge.score { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .badge.time { color: var(--ink-soft); }
+  .summary { font-size: 14.5px; color: var(--ink); margin: 0 0 8px; }
+  .why {
+    font-size: 13.5px;
+    color: var(--accent-2);
+    background: #f0ebe3;
+    border-left: 3px solid var(--accent-2);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 0 8px;
+  }
+  .card .link { font-size: 13px; }
+  .card .link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  .card .link a:hover { text-decoration: underline; }
+  .tags { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+
+  table.stats {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  table.stats th, table.stats td {
+    border: 1px solid var(--line);
+    padding: 7px 10px;
+    text-align: left;
+  }
+  table.stats th { background: #f0ebe3; color: var(--ink); }
+  td.ok { color: var(--accent-2); font-weight: 600; }
+  td.fail { color: var(--accent); font-weight: 600; }
+
+  footer { margin-top: 48px; color: var(--ink-soft); font-size: 12.5px; text-align: center; }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 48px; }
+    header.report-head h1 { font-size: 22px; }
+    .card { padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="report-head">
+  <h1>AI × 量化交易前沿日报</h1>
+  <div class="meta">
+    2026-09-18 · 共收录 <b>20</b> 条 ·
+    信息源成功 <b>8</b> / 失败 <b>4</b>
+  </div>
+</header>
+
+<div class="top3">
+  <h2>⭐ Top 3 亮点</h2>
+  <ol>
+    <li>
+      <a href="https://github.com/TauricResearch/TradingAgents/pull/1185">[TauricResearch/TradingAgents] PR: refactor: add type annotations and extract shared researcher/debator base classes</a>
+      <span class="src">— GitHub 项目动态 · score 11</span>
+    </li>
+    <li>
+      <a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09142026/">Recent Quant Links from Quantocracy as of 09/14/2026</a>
+      <span class="src">— Quantocracy · score 8</span>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2609.18770v1">Regularity of a Multidimensional Principal-Agent Problem with Separable Effort Costs</a>
+      <span class="src">— arXiv q-fin · score 8</span>
+    </li>
+  </ol>
+</div>
+
+<section class="block">
+  <h2>【量化精选】 <span class="cnt">15 条</span></h2>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09142026/">Recent Quant Links from Quantocracy as of 09/14/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 8</span>
+      <span class="badge time">09-15 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 量化博客每日精选（09/14 期），本期亮点包括：Tom Carlson 的自适应 60/40 组合——用动量方法在股票分散化工具间切换；以及多篇关于债券不再能分散股票风险、波动率维持高位的组合构建讨论。</p>
+    <p class="why">💡 为何关注：传统 60/40 组合在股债相关性转正的环境下失效，动量择时的替代方案值得做资产配置的量化研究者回测验证。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09142026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.18770v1">Regularity of a Multidimensional Principal-Agent Problem with Separable Effort Costs</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 8</span>
+      <span class="badge time">09-16 14:54 UTC</span>
+    </div>
+    <p class="summary">论文研究多维连续时间委托-代理模型中值函数的正则性问题，假设努力成本可分离且非二次。针对 HJB 方程完全非线性、退化且系数可能无界的困难，作者通过加入独立正则化噪声并约束努力水平，建立了值函数的经典正则性。</p>
+    <p class="why">💡 为何关注：委托-代理理论是做市商补偿、基金经理激励合约设计的数学基础，做市场微观结构或激励机制研究的读者可关注其方法论。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.18770v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09162026/">Recent Quant Links from Quantocracy as of 09/16/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-17 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 每日精选（09/16 期），头条是 Quanter Lab 的 Fama-French 因子在标普 500 成分股内的 walk-forward 实证（2006–2025）：每年 6 月底按信号排序调仓，检验因子在大盘股的样本外表现。</p>
+    <p class="why">💡 为何关注：Fama-French 因子在纯大盘股、严格 walk-forward 框架下的表现是因子投资者最关心的实证问题之一，可直接对照自己的因子实现。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09162026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09122026/">Recent Quant Links from Quantocracy as of 09/12/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-13 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 每日精选（09/12 期），头条为 Piotroski F-score 在标普 500 上的点对点回测（2000–2025）：用九个是非题筛选基本面健康的价值股，检验这一经典价值策略的长期有效性。</p>
+    <p class="why">💡 为何关注：F-score 是每个价值投资者都跑过的经典筛选器，25 年 point-in-time 数据的回测结果对评估其当下有效性很有参考价值。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09122026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.19102v1">Optimal entry and exit for variance swaps: closed-form rules for the perpetual contract</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-16 17:32 UTC</span>
+    </div>
+    <p class="summary">方差互换是交易 vega 与凸性的便利工具（Cboe 已有上市合约）。本文针对永续连续结算合约，给出最优开仓与平仓阈值的闭式解——每个阈值是合流超几何函数光滑粘贴方程的唯一根；在含方差风险溢价的物理测度下问题才有实质意义。</p>
+    <p class="why">💡 为何关注：做波动率交易的读者可获得一套无需数值模拟的进出场规则，直接应用于方差互换或 VIX 相关产品的择时。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.19102v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.18019v1">Model-Free Passive Execution via Order-Level Shadowing</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-16 02:16 UTC</span>
+    </div>
+    <p class="summary">TWAP、VWAP、POV、IS 等经典执行算法本质上都是模型驱动的。本文提出 Shadow-PPOV：一种无模型的被动执行算法，其挂单速率由观测到的订单流（而非成交量）设定，绕开了传统被动挂单对订单簿模型的依赖。</p>
+    <p class="why">💡 为何关注：执行算法直接决定交易成本，这套'无模型'思路对自建执行系统的团队是低成本可复现的改进方向。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.18019v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.17869v1">Demystifying the Bergomi-Guyon expansion</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-15 21:51 UTC</span>
+    </div>
+    <p class="summary">Bergomi-Guyon 展开是粗糙波动率模型中隐含方差微笑的渐近展开。本文解开了其中一个'神秘'现象：逐阶矩匹配中次数高于阶数的项为何恰好相消——作者证明在合适变量下匹配条件可写成非线性热方程，由此得到各阶树积前置因子的递推计算式。</p>
+    <p class="why">💡 为何关注：用粗糙波动率模型定价或校准波动率曲面的量化研究员，这套递推方法能简化高阶展开的实际计算。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.17869v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.15744v1">Design of a Deep Learning Credit Risk Early Warning System Integrating Multi-source Heterogeneous Data</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-14 15:35 UTC</span>
+    </div>
+    <p class="summary">针对金融风险预警中信息孤岛与监控滞后的痛点，本文提出融合多源异构数据的深度学习信用风险预警系统：以深度神经网络加注意力机制提取交易行为、社交网络等多维特征，实现风险早期识别。</p>
+    <p class="why">💡 为何关注：多源数据融合 + 注意力机制的架构思路可直接迁移到个股风险预警、违约预测等量化风控场景。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.15744v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.15741v1">Quantifying the 2027 Solvency II Risk Margin Reform</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-14 15:32 UTC</span>
+    </div>
+    <p class="summary">2027 年 Solvency II 改革将风险边际的规定资本成本率从 6% 降至 4.75%，并对未来偿付资本要求引入时变衰减。本文构建解析-数值框架量化最终监管校准的影响，通过将贴现资本要求归一化为 run-off 时间上的概率分布，得到新旧风险边际比值的精确表示与普适界。</p>
+    <p class="why">💡 为何关注：对保险资金运用、长期资本要求敏感的策略（如利差、久期配置），这项监管量化的影响评估值得跟踪。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.15741v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.17610v1">On-Demand Combinatorial Event Markets on Kalshi: Instantiation, Concentration, and Effective Market Breadth</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">09-14 11:04 UTC</span>
+    </div>
+    <p class="summary">Kalshi 的多元事件架构可按需从选定的腿组合生成市场对象。论文对一周窗口的数据做了系统统计：日均生成约 108.7 万个市场对象、具有强小时级突发性或集中度，并给出层级压缩结构（精确事件键、原始腿、腿出现次数）的量化刻画。</p>
+    <p class="why">💡 为何关注：预测市场正在成为新的可交易资产类别，了解其市场微观结构与对象生成规律是设计事件驱动策略的前提。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.17610v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.19094v1">Quadratic G-BSDEs for bond pricing with endogenous short-rate feedback</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-16 17:29 UTC</span>
+    </div>
+    <p class="summary">在波动率不确定（G-期望框架）下研究具有内生短期利率反馈的债券稳健定价：短期利率对债券价格的依赖形成非线性不动点问题，可用对数价格的二次 G-BSDE 刻画。论文建立了有界有限期解的存在唯一性、比较与稳定性，并给出无限期解及指数收敛结果。</p>
+    <p class="why">💡 为何关注：波动率不确定下的稳健定价框架，对利率衍生品定价和模型风险量化有理论参考价值。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.19094v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.17788v1">SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-15 19:53 UTC</span>
+    </div>
+    <p class="summary">SAiFE-gym 是一个 Python 仿真环境库，用于研究集中流动性恒定乘积做市商（如 Uniswap V3 类）中的交易问题。它将 CPM+CL 的微观结构分解为可交互组件，支持研究者模拟各种经济设定下流动性提供者的资本配置与动态调仓行为。</p>
+    <p class="why">💡 为何关注：做 DeFi 做市策略或 LP 收益研究的读者，这个开源环境可直接用于强化学习训练与策略回测。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.17788v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.16642v1">From Public Evidence to Contractual Outcome: First and Stable Decidability on Kalshi</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-15 05:03 UTC</span>
+    </div>
+    <p class="summary">预测市场合约在平台首次裁定之前，公开证据可能已足以确定结算结果，但边界取决于规则版本、发布对象、信源层级、更正历史与未决条件。本文为 Kalshi 定义了'首次可判定性'与'稳定可判定性'两个时钟，并完成回溯识别检验。</p>
+    <p class="why">💡 为何关注：'信息已公开但平台尚未裁定'的时间差就是预测市场套利的空间，这篇提供了系统化度量该窗口的方法。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.16642v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.15901v1">Strategic Index Reconstitution: Differential Games, Closed-Loop Equilibria and Mean-Field Dynamics</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-14 17:18 UTC</span>
+    </div>
+    <p class="summary">研究指数调仓前后的策略性交易：连续时间多资产博弈，含瞬态跨资产价格冲击和对未来指数成分的异质信念。机会主义交易者在公告前建仓、随成分揭晓调整、并围绕指数基金执行计划交易；在无价格操纵条件下构造了子博弈精炼纳什均衡。</p>
+    <p class="why">💡 为何关注：指数调仓（如 MSCI、标普纳入剔除）前后的拥挤交易与价格冲击是事件驱动策略的经典议题，这个博弈论框架给出了均衡刻画。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.15901v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.15373v1">Resolution Is Not Settlement, Part II: Protocol Finality and Observed Redemption on Polymarket</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-14 10:58 UTC</span>
+    </div>
+    <p class="summary">Oracle 出结果不等于协议赔付，可赎回头寸不等于账户到账。这篇 Polymarket 研究（第二部分）构建事件溯源框架，基于 ConditionPreparation、ConditionResolution、PayoutRedemption 三类合约事件族，追踪从条件准备到协议终局再到持有人实际兑付的完整链路。</p>
+    <p class="why">💡 为何关注：链上预测市场的'裁决→结算→兑付'各阶段存在时滞与摩擦，理解它们是评估链上事件交易真实成本与风险的关键。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.15373v1">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【AI 前沿】 <span class="cnt">1 条</span></h2>
+  <article class="card">
+    <h3><a href="https://lastweekin.ai/p/last-week-in-ai-343-gpt-6-openais">Last Week in AI #343 - GPT-6, OpenAI’s agents chatted on a wiki, Fable 5.1</a></h3>
+    <div class="badges">
+      <span class="badge">Last Week in AI (替代 The Batch)</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">09-07 13:02 UTC</span>
+    </div>
+    <p class="summary">Last Week in AI 第 343 期：GPT-6 Astra 发布；发现 OpenAI 智能体在某个 wiki 上互相交流的留言板；Anthropic 发布 Claude Fable 5.1，宣称智能体工作负载成本最高降低 45%。</p>
+    <p class="why">💡 为何关注：新一代模型降价直接降低 LLM 量化智能体（如 TradingAgents 类框架）的运行成本，值得重新评估自己的 token 预算。</p>
+    <div class="link"><a href="https://lastweekin.ai/p/last-week-in-ai-343-gpt-6-openais">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【交叉热点（quant×ai）】 <span class="cnt">1 条</span></h2>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2609.19135v1">Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv AI+Finance 搜索</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">09-16 17:56 UTC</span>
+    </div>
+    <p class="summary">离策略评估（OPE）的理论 hardness 结果：当行为策略依赖历史时，即使日志数据集覆盖所有隐状态，对目标策略价值的评估仍可能需要指数级样本。论文对任意 horizon H≥3 构造了两隐状态 POMDP 实例，证明达到 1/8 精度需要 Θ((3/2)^H) 量级的日志回合。</p>
+    <p class="why">💡 为何关注：用强化学习做交易策略时，离策略评估是回测之外验证策略的关键工具，这个结果警示了其在路径依赖环境下的根本性局限。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2609.19135v1">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【开源项目动态】 <span class="cnt">3 条</span></h2>
+  <article class="card">
+    <h3><a href="https://github.com/TauricResearch/TradingAgents/pull/1185">[TauricResearch/TradingAgents] PR: refactor: add type annotations and extract shared researcher/debator base classes</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 11</span>
+      <span class="badge time">09-18 00:19 UTC</span>
+    </div>
+    <p class="summary">TradingAgents 框架为全代码库（agents、dataflows、graph、llm_clients 约 41 个文件）补齐类型注解，并将研究员与风控辩论智能体中重复的节点创建逻辑抽取为共享基类工厂。这是该 LLM 多智能体交易框架走向工程成熟的重要一步，显著降低二次开发的运行时错误风险。</p>
+    <p class="why">💡 为何关注：想基于 TradingAgents 搭建自己的 LLM 交易流水线，这次重构后的代码可读性和可扩展性都更好，是跟进或贡献代码的好时机。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://github.com/TauricResearch/TradingAgents/pull/1185">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/TauricResearch/TradingAgents/pull/1263">[TauricResearch/TradingAgents] PR: test: add unit tests for Azure OpenAI provider client</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-18 00:19 UTC</span>
+    </div>
+    <p class="summary">TradingAgents 新增 Azure OpenAI provider 客户端的单元测试，补齐了测试均等性缺口——此前 anthropic、bedrock、google、openai 各家 LLM 客户端均有对应测试文件，唯独 azure_client 缺失。</p>
+    <p class="why">💡 为何关注：如果你用 Azure OpenAI 部署 TradingAgents，测试覆盖的补齐意味着该路径的稳定性有了保障。</p>
+    <div class="link"><a href="https://github.com/TauricResearch/TradingAgents/pull/1263">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/TauricResearch/TradingAgents/issues/1225">[TauricResearch/TradingAgents] Issue: [Feature Request] Pluggable ML Signal Providers + Broker Execution Interface</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">09-18 00:19 UTC</span>
+    </div>
+    <p class="summary">有开发者在 TradingAgents 提交功能请求：希望支持可插拔的 ML 信号源 + 券商执行接口。其现有架构为混合 ML/LLM 流水线——市场与新闻数据经 BERT 分类器产出结构化信号，再由 Gemini 生成符合 schema 约束的 JSON 交易决策。</p>
+    <p class="why">💡 为何关注：这个 issue 展示了'传统 ML 信号 + LLM 决策'混合架构的真实社区需求，做类似架构的读者可参与讨论或直接借鉴。</p>
+    <div class="link"><a href="https://github.com/TauricResearch/TradingAgents/issues/1225">阅读原文 ↗</a></div>
+  </article>
+</section>
+
+<section class="block">
+  <h2>信息源抓取状态</h2>
+  <table class="stats">
+    <thead>
+      <tr><th>信息源</th><th>类型</th><th>侧别</th><th>状态</th><th>条数</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Quantocracy</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><a href="https://huggingface.co/papers/rss" target="_blank" rel="noopener noreferrer">Hugging Face Daily Papers</a></td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>网络不可达（沙箱/防火墙限制）</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/algotrading/" target="_blank" rel="noopener noreferrer">r/algotrading</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>网络不可达（沙箱/防火墙限制）</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/quant/" target="_blank" rel="noopener noreferrer">r/quant</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>网络不可达（沙箱/防火墙限制）</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/MachineLearning/" target="_blank" rel="noopener noreferrer">r/MachineLearning</a></td>
+        <td>reddit</td>
+        <td>ai</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>网络不可达（沙箱/防火墙限制）</td>
+      </tr>
+      <tr>
+        <td>arXiv q-fin</td>
+        <td>arxiv</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>12</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>arXiv AI+Finance 搜索</td>
+        <td>arxiv</td>
+        <td>both</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Alpha Architect</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>5</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Quantitativo</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Last Week in AI (替代 The Batch)</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Import AI</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>GitHub 项目动态</td>
+        <td>github</td>
+        <td>both</td>
+        <td class="ok">✅ 成功</td>
+        <td>12</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>由 ai-quant-daily 自动生成 · 2026-09-18</footer>
+
+</div>
+</body>
+</html>

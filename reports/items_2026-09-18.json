@@ -1,0 +1,366 @@
+{
+  "date": "2026-09-18",
+  "total": 20,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/search/?searchtype=all&query=cat%3Aq-fin.%2A"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://arxiv.org/search/?searchtype=all&query=%28all%3A%22trading%22%2BOR%2Ball%3A%22financial%20market%22%29%2BAND%2B%28cat%3Acs.LG%2BOR%2Bcat%3Acs.CL%29"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "[TauricResearch/TradingAgents] PR: refactor: add type annotations and extract shared researcher/debator base classes",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1185",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-09-18T00:19:10+00:00",
+      "summary_raw": "## Summary Add missing `Any` type annotations across the entire codebase (agents, dataflows, graph, llm_clients) and DRY up duplicated node-creation logic in researchers and risk debators into shared `_base.py` factories. ## Changes - **Type annotations** — ~41 files: add `typing.Any` imports and an",
+      "score": 11,
+      "summary_cn": "TradingAgents 框架为全代码库（agents、dataflows、graph、llm_clients 约 41 个文件）补齐类型注解，并将研究员与风控辩论智能体中重复的节点创建逻辑抽取为共享基类工厂。这是该 LLM 多智能体交易框架走向工程成熟的重要一步，显著降低二次开发的运行时错误风险。",
+      "why_cn": "想基于 TradingAgents 搭建自己的 LLM 交易流水线，这次重构后的代码可读性和可扩展性都更好，是跟进或贡献代码的好时机。",
+      "id": "372dc7397120",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 09/14/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09142026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-09-15T05:15:06+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Monday, 09/14/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Tom Carlson s Adaptive 60/40 Portfolio: Momentum-based Selection of Stock Diversifiers [Portfolio Optimizer] Welcome to 2026, where bonds no longer diversify stocks, volatility remains elevated and inflation isnt […] The post Recent Quant Links from Quantocracy as of 09/14/2026 appeared first on Quantocracy .",
+      "score": 8,
+      "summary_cn": "Quantocracy 量化博客每日精选（09/14 期），本期亮点包括：Tom Carlson 的自适应 60/40 组合——用动量方法在股票分散化工具间切换；以及多篇关于债券不再能分散股票风险、波动率维持高位的组合构建讨论。",
+      "why_cn": "传统 60/40 组合在股债相关性转正的环境下失效，动量择时的替代方案值得做资产配置的量化研究者回测验证。",
+      "id": "9c0abebbf731",
+      "highlights": []
+    },
+    {
+      "title": "Regularity of a Multidimensional Principal-Agent Problem with Separable Effort Costs",
+      "url": "https://arxiv.org/abs/2609.18770v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-16T14:54:17+00:00",
+      "summary_raw": "This paper studies the regularity of the value function arising from a multidimensional continuous-time principal-agent model with separable, nonquadratic effort costs. The associated stochastic control problem has the output and the agent's continuation utility as state variables, and its Hamilton-Jacobi-Bellman equation is fully nonlinear and degenerate, with potentially unbounded coefficients. We address these difficulties by adding an independent regularization noise and bounding the effort. For the resulting problem, we establish classical regularity of the value function and show that th",
+      "score": 8,
+      "summary_cn": "论文研究多维连续时间委托-代理模型中值函数的正则性问题，假设努力成本可分离且非二次。针对 HJB 方程完全非线性、退化且系数可能无界的困难，作者通过加入独立正则化噪声并约束努力水平，建立了值函数的经典正则性。",
+      "why_cn": "委托-代理理论是做市商补偿、基金经理激励合约设计的数学基础，做市场微观结构或激励机制研究的读者可关注其方法论。",
+      "id": "da80b95ae74b",
+      "highlights": []
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 09/16/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09162026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-09-17T05:15:04+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Wednesday, 09/16/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Fama-French factors inside the S&P 500: walk-forward 2006 to 2025 [Quanter Lab] Fama and French sort every US stock on the signal at the end of June, hold […] The post Recent Quant Links from Quantocracy as of 09/16/2026 appeared first on Quantocracy .",
+      "score": 7,
+      "summary_cn": "Quantocracy 每日精选（09/16 期），头条是 Quanter Lab 的 Fama-French 因子在标普 500 成分股内的 walk-forward 实证（2006–2025）：每年 6 月底按信号排序调仓，检验因子在大盘股的样本外表现。",
+      "why_cn": "Fama-French 因子在纯大盘股、严格 walk-forward 框架下的表现是因子投资者最关心的实证问题之一，可直接对照自己的因子实现。",
+      "id": "22db5a7791d5",
+      "highlights": []
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 09/12/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-09122026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-09-13T05:15:04+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Saturday, 09/12/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Piotroski F-score backtest on the S&P 500, point in time, 2000 to 2025 [Quanter Lab] Piotroski's F-score is the screen every value investor has run: nine yes-or-no questions […] The post Recent Quant Links from Quantocracy as of 09/12/2026 appeared first on Quantocracy .",
+      "score": 7,
+      "summary_cn": "Quantocracy 每日精选（09/12 期），头条为 Piotroski F-score 在标普 500 上的点对点回测（2000–2025）：用九个是非题筛选基本面健康的价值股，检验这一经典价值策略的长期有效性。",
+      "why_cn": "F-score 是每个价值投资者都跑过的经典筛选器，25 年 point-in-time 数据的回测结果对评估其当下有效性很有参考价值。",
+      "id": "175dfda40092",
+      "highlights": []
+    },
+    {
+      "title": "Optimal entry and exit for variance swaps: closed-form rules for the perpetual contract",
+      "url": "https://arxiv.org/abs/2609.19102v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-16T17:32:18+00:00",
+      "summary_raw": "Variance swaps are a convenient instrument for trading vega and convexity, and a listed contract now trades on Cboe. We ask when a trader should put such a position on and when she should take it off, and for a perpetual, continuously settled contract we answer both in closed form: each threshold is the unique root of a smooth-pasting equation in confluent hypergeometric functions. Under the pricing measure the question has no content, the mark-to-market being a martingale. Under the physical measure with a variance risk premium it becomes meaningful, and then reduces: the accrued variance sep",
+      "score": 7,
+      "summary_cn": "方差互换是交易 vega 与凸性的便利工具（Cboe 已有上市合约）。本文针对永续连续结算合约，给出最优开仓与平仓阈值的闭式解——每个阈值是合流超几何函数光滑粘贴方程的唯一根；在含方差风险溢价的物理测度下问题才有实质意义。",
+      "why_cn": "做波动率交易的读者可获得一套无需数值模拟的进出场规则，直接应用于方差互换或 VIX 相关产品的择时。",
+      "id": "212aefd7a239",
+      "highlights": []
+    },
+    {
+      "title": "Model-Free Passive Execution via Order-Level Shadowing",
+      "url": "https://arxiv.org/abs/2609.18019v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-16T02:16:13+00:00",
+      "summary_raw": "Automated execution algorithms are organized into schedule-based and liquidity-seeking families. This paper concerns the first, whose members -- Time-Weighted Average Price (TWAP), Volume-Weighted Average Price (VWAP), Percentage of Volume (POV) and Implementation Shortfall -- are all model-based: each derives its decisions from an explicit model, forecast, schedule or control rule. We introduce Shadow-PPOV, a passive POV whose order-placement rate is set from observed order flow rather than from traded volume. Placing a passive order to fill efficiently conventionally involves an order-book m",
+      "score": 7,
+      "summary_cn": "TWAP、VWAP、POV、IS 等经典执行算法本质上都是模型驱动的。本文提出 Shadow-PPOV：一种无模型的被动执行算法，其挂单速率由观测到的订单流（而非成交量）设定，绕开了传统被动挂单对订单簿模型的依赖。",
+      "why_cn": "执行算法直接决定交易成本，这套'无模型'思路对自建执行系统的团队是低成本可复现的改进方向。",
+      "id": "b212f1987634",
+      "highlights": []
+    },
+    {
+      "title": "Demystifying the Bergomi-Guyon expansion",
+      "url": "https://arxiv.org/abs/2609.17869v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-15T21:51:05+00:00",
+      "summary_raw": "Alòs, Gatheral and Radoičić derived the Bergomi-Guyon expansion of the implied variance smile from the forest expansion of the cumulant generating function. Its coefficients are sums of products of diamond trees, with prefactors that are polynomials in the log-strike $k$. Matching moments order by order produces, at order $ε^\\ell$, terms of degree greater than $\\ell$ in $k$ that mysteriously cancel. We show that, in suitable variables, the matching condition can be formulated as a nonlinear heat equation. The resulting recursion computes the prefactor of each product of trees from those of pro",
+      "score": 7,
+      "summary_cn": "Bergomi-Guyon 展开是粗糙波动率模型中隐含方差微笑的渐近展开。本文解开了其中一个'神秘'现象：逐阶矩匹配中次数高于阶数的项为何恰好相消——作者证明在合适变量下匹配条件可写成非线性热方程，由此得到各阶树积前置因子的递推计算式。",
+      "why_cn": "用粗糙波动率模型定价或校准波动率曲面的量化研究员，这套递推方法能简化高阶展开的实际计算。",
+      "id": "0a475a13aacb",
+      "highlights": []
+    },
+    {
+      "title": "Design of a Deep Learning Credit Risk Early Warning System Integrating Multi-source Heterogeneous Data",
+      "url": "https://arxiv.org/abs/2609.15744v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-14T15:35:41+00:00",
+      "summary_raw": "Advancements in data fusion and real-time analytics technologies have opened new avenues for addressing complex domain challenges. Financial risk early warning systems often suffer from inefficiency due to information silos and monitoring delays. This paper proposes a credit risk early warning system based on heterogeneous information fusion. The system employs a model architecture integrating deep neural networks and attention mechanisms to extract multidimensional features from diverse data sources such as transaction behaviors and social networks, thereby establishing an early identificatio",
+      "score": 7,
+      "summary_cn": "针对金融风险预警中信息孤岛与监控滞后的痛点，本文提出融合多源异构数据的深度学习信用风险预警系统：以深度神经网络加注意力机制提取交易行为、社交网络等多维特征，实现风险早期识别。",
+      "why_cn": "多源数据融合 + 注意力机制的架构思路可直接迁移到个股风险预警、违约预测等量化风控场景。",
+      "id": "c50d8337b576",
+      "highlights": []
+    },
+    {
+      "title": "Quantifying the 2027 Solvency II Risk Margin Reform",
+      "url": "https://arxiv.org/abs/2609.15741v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-14T15:32:48+00:00",
+      "summary_raw": "The 2027 Solvency II reform recalibrates the Risk Margin by reducing the prescribed cost-of-capital rate from 6% to 4.75% and introducing a time-dependent attenuation of future Solvency Capital Requirements. This paper develops an analytical and numerical framework for characterizing the effect of the final regulatory calibration. By normalizing discounted projected capital requirements into a probability distribution over run-off time, we obtain an exact representation of the ratio between the revised and previous Risk Margins. The framework yields sharp universal and horizon-specific bounds,",
+      "score": 7,
+      "summary_cn": "2027 年 Solvency II 改革将风险边际的规定资本成本率从 6% 降至 4.75%，并对未来偿付资本要求引入时变衰减。本文构建解析-数值框架量化最终监管校准的影响，通过将贴现资本要求归一化为 run-off 时间上的概率分布，得到新旧风险边际比值的精确表示与普适界。",
+      "why_cn": "对保险资金运用、长期资本要求敏感的策略（如利差、久期配置），这项监管量化的影响评估值得跟踪。",
+      "id": "742ca56488ca",
+      "highlights": []
+    },
+    {
+      "title": "On-Demand Combinatorial Event Markets on Kalshi: Instantiation, Concentration, and Effective Market Breadth",
+      "url": "https://arxiv.org/abs/2609.17610v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-14T11:04:28+00:00",
+      "summary_raw": "Kalshi's multivariate-event architecture produces market objects on demand from exact selected legs. Across a registered seven-day interval, 190 independently validated temporal shards yield 7,611,594 unique REST MVE market tickers after excluding 5,777 boundary-overlap observations; the population was created at an average rate of 1.087 million objects per day, with strong hourly burstiness. The hierarchy is sharply compressed relative to the market-object count: 5,262,526 exact event keys, three collection keys, 83,701 selected-leg primitives, and 66,344,938 selected-leg occurrences. The lar",
+      "score": 7,
+      "summary_cn": "Kalshi 的多元事件架构可按需从选定的腿组合生成市场对象。论文对一周窗口的数据做了系统统计：日均生成约 108.7 万个市场对象、具有强小时级突发性或集中度，并给出层级压缩结构（精确事件键、原始腿、腿出现次数）的量化刻画。",
+      "why_cn": "预测市场正在成为新的可交易资产类别，了解其市场微观结构与对象生成规律是设计事件驱动策略的前提。",
+      "id": "4438cbf39750",
+      "highlights": []
+    },
+    {
+      "title": "Quadratic G-BSDEs for bond pricing with endogenous short-rate feedback",
+      "url": "https://arxiv.org/abs/2609.19094v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-16T17:29:23+00:00",
+      "summary_raw": "We study robust bond valuation with endogenous short-rate feedback under volatility uncertainty. Within the $G$-expectation framework, the dependence of the short rate on the bond price yields a nonlinear fixed-point problem, represented by a quadratic $G$-BSDE for the logarithmic price. Under suitable assumptions, we establish existence, uniqueness, comparison, and stability for bounded finite-horizon solutions. An additional strict monotonicity condition yields a unique bounded infinite-horizon solution and exponential convergence of finite-horizon approximations on compact time intervals. W",
+      "score": 6,
+      "summary_cn": "在波动率不确定（G-期望框架）下研究具有内生短期利率反馈的债券稳健定价：短期利率对债券价格的依赖形成非线性不动点问题，可用对数价格的二次 G-BSDE 刻画。论文建立了有界有限期解的存在唯一性、比较与稳定性，并给出无限期解及指数收敛结果。",
+      "why_cn": "波动率不确定下的稳健定价框架，对利率衍生品定价和模型风险量化有理论参考价值。",
+      "id": "d7df8416d487",
+      "highlights": []
+    },
+    {
+      "title": "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity",
+      "url": "https://arxiv.org/abs/2609.17788v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-15T19:53:47+00:00",
+      "summary_raw": "We present SAiFE_gym, a Python module that provides a collection of simulation environments for studying trading problems in Constant Product Markets (CPMs) with Concentrated Liquidity (CL). These markets give Liquidity Providers (LPs) granular control over how their capital is allocated and enable them to adjust their range of liquidity provision dynamically based on market conditions, which in turn, dictates how they earn fees. We decompose the microstructure of CPMs with CL in interactive components that allow researchers and practitioners to capture various economic settings. We employ a v",
+      "score": 6,
+      "summary_cn": "SAiFE-gym 是一个 Python 仿真环境库，用于研究集中流动性恒定乘积做市商（如 Uniswap V3 类）中的交易问题。它将 CPM+CL 的微观结构分解为可交互组件，支持研究者模拟各种经济设定下流动性提供者的资本配置与动态调仓行为。",
+      "why_cn": "做 DeFi 做市策略或 LP 收益研究的读者，这个开源环境可直接用于强化学习训练与策略回测。",
+      "id": "d6d1197d40fe",
+      "highlights": []
+    },
+    {
+      "title": "From Public Evidence to Contractual Outcome: First and Stable Decidability on Kalshi",
+      "url": "https://arxiv.org/abs/2609.16642v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-15T05:03:22+00:00",
+      "summary_raw": "Public evidence can become sufficient to settle a prediction-market contract before the venue records its first determination, but the relevant boundary depends on the applicable rule version, exact release object, source hierarchy, correction history, and unfinished contract conditions. This paper defines two Kalshi clocks: first decidability, the earliest contemporaneous singleton in the rule-evidence mapping, and stable decidability, the retrospective earliest time after which the same singleton remains unchanged through finalization. A completed retrospective identification test establishe",
+      "score": 6,
+      "summary_cn": "预测市场合约在平台首次裁定之前，公开证据可能已足以确定结算结果，但边界取决于规则版本、发布对象、信源层级、更正历史与未决条件。本文为 Kalshi 定义了'首次可判定性'与'稳定可判定性'两个时钟，并完成回溯识别检验。",
+      "why_cn": "'信息已公开但平台尚未裁定'的时间差就是预测市场套利的空间，这篇提供了系统化度量该窗口的方法。",
+      "id": "792bae182931",
+      "highlights": []
+    },
+    {
+      "title": "Strategic Index Reconstitution: Differential Games, Closed-Loop Equilibria and Mean-Field Dynamics",
+      "url": "https://arxiv.org/abs/2609.15901v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-14T17:18:55+00:00",
+      "summary_raw": "We study strategic trading around index reconstitution in a continuous-time, multiasset game with transient cross-asset price impact and heterogeneous beliefs about future index membership. Opportunistic traders position before a public announcement, adjust to the revealed composition, and trade around an indexer following a prescribed execution schedule. Under a no-price-manipulation condition, we construct a subgame-perfect Nash equilibrium on every finite horizon. The affine feedback policies are computed from a non-standard matrix Riccati equation and linear ordinary differential equations",
+      "score": 6,
+      "summary_cn": "研究指数调仓前后的策略性交易：连续时间多资产博弈，含瞬态跨资产价格冲击和对未来指数成分的异质信念。机会主义交易者在公告前建仓、随成分揭晓调整、并围绕指数基金执行计划交易；在无价格操纵条件下构造了子博弈精炼纳什均衡。",
+      "why_cn": "指数调仓（如 MSCI、标普纳入剔除）前后的拥挤交易与价格冲击是事件驱动策略的经典议题，这个博弈论框架给出了均衡刻画。",
+      "id": "22fe6df12a8f",
+      "highlights": []
+    },
+    {
+      "title": "Resolution Is Not Settlement, Part II: Protocol Finality and Observed Redemption on Polymarket",
+      "url": "https://arxiv.org/abs/2609.15373v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-09-14T10:58:51+00:00",
+      "summary_raw": "An Oracle result is not yet a protocol payout, a redeemable position is not yet collateral in a holder's account, and a redemption event is not a complete measure of economic entitlement. This companion paper develops an event-sourced framework for Polymarket conditions from preparation through protocol finality and observed holder realization. The empirical design uses three Conditional Tokens Framework event families derived from a pinned contract application binary interface (ABI): ConditionPreparation, ConditionResolution, and PayoutRedemption. It separates the contract-wide acquisition un",
+      "score": 6,
+      "summary_cn": "Oracle 出结果不等于协议赔付，可赎回头寸不等于账户到账。这篇 Polymarket 研究（第二部分）构建事件溯源框架，基于 ConditionPreparation、ConditionResolution、PayoutRedemption 三类合约事件族，追踪从条件准备到协议终局再到持有人实际兑付的完整链路。",
+      "why_cn": "链上预测市场的'裁决→结算→兑付'各阶段存在时滞与摩擦，理解它们是评估链上事件交易真实成本与风险的关键。",
+      "id": "635616915180",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: test: add unit tests for Azure OpenAI provider client",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1263",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-09-18T00:19:24+00:00",
+      "summary_raw": "## Why Every other LLM provider client (`anthropic`, `bedrock`, `google`, `openai`) has a corresponding `tests/test_*_provider.py` file, but `azure_client.py` had none — a test-parity gap in an otherwise thoroughly-tested `llm_clients` module. ## What Adds `tests/test_azure_provider.py`, mirroring t",
+      "score": 6,
+      "summary_cn": "TradingAgents 新增 Azure OpenAI provider 客户端的单元测试，补齐了测试均等性缺口——此前 anthropic、bedrock、google、openai 各家 LLM 客户端均有对应测试文件，唯独 azure_client 缺失。",
+      "why_cn": "如果你用 Azure OpenAI 部署 TradingAgents，测试覆盖的补齐意味着该路径的稳定性有了保障。",
+      "id": "cceba45fbc12",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] Issue: [Feature Request] Pluggable ML Signal Providers + Broker Execution Interface",
+      "url": "https://github.com/TauricResearch/TradingAgents/issues/1225",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-09-18T00:19:17+00:00",
+      "summary_raw": "Hi TradingAgents team, I've been building an automated trading pipeline with a goal similar to TradingAgents, but using a hybrid ML/LLM architecture. My current architecture is roughly: Market / News Data ↓ BERT-based classifier ↓ Structured ML signals ↓ Gemini ↓ Schema-constrained JSON decision ↓ D",
+      "score": 6,
+      "summary_cn": "有开发者在 TradingAgents 提交功能请求：希望支持可插拔的 ML 信号源 + 券商执行接口。其现有架构为混合 ML/LLM 流水线——市场与新闻数据经 BERT 分类器产出结构化信号，再由 Gemini 生成符合 schema 约束的 JSON 交易决策。",
+      "why_cn": "这个 issue 展示了'传统 ML 信号 + LLM 决策'混合架构的真实社区需求，做类似架构的读者可参与讨论或直接借鉴。",
+      "id": "de4f699d4ea2",
+      "highlights": []
+    },
+    {
+      "title": "Last Week in AI #343 - GPT-6, OpenAI’s agents chatted on a wiki, Fable 5.1",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-343-gpt-6-openais",
+      "source": "Last Week in AI (替代 The Batch)",
+      "side": "ai",
+      "published": "2026-09-07T13:02:49+00:00",
+      "summary_raw": "GPT-6 Astra Is Here, Discovery of a new OpenAI agent message board, Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work, and more!",
+      "score": 5,
+      "summary_cn": "Last Week in AI 第 343 期：GPT-6 Astra 发布；发现 OpenAI 智能体在某个 wiki 上互相交流的留言板；Anthropic 发布 Claude Fable 5.1，宣称智能体工作负载成本最高降低 45%。",
+      "why_cn": "新一代模型降价直接降低 LLM 量化智能体（如 TradingAgents 类框架）的运行成本，值得重新评估自己的 token 预算。",
+      "id": "9209c29d15bd",
+      "highlights": []
+    },
+    {
+      "title": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
+      "url": "https://arxiv.org/abs/2609.19135v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-09-16T17:56:12+00:00",
+      "summary_raw": "Can a logged dataset visit every hidden state frequently and still be exponentially uninformative about a target policy's value? We show that it can when the logger depends on history. For every horizon $H \\ge 3$, we construct two POMDPs with at most two latent states per stage, three actions, and a common logger with three memory states. Action coverage, belief coverage, and two behavior-marginal outcome-revealing conditions all have constants independent of $H$. Nevertheless, evaluating a known deterministic target policy to accuracy $1/8$ requires $Θ((3/2)^H \\log(1/δ))$ logged episodes at c",
+      "score": 5,
+      "summary_cn": "离策略评估（OPE）的理论 hardness 结果：当行为策略依赖历史时，即使日志数据集覆盖所有隐状态，对目标策略价值的评估仍可能需要指数级样本。论文对任意 horizon H≥3 构造了两隐状态 POMDP 实例，证明达到 1/8 精度需要 Θ((3/2)^H) 量级的日志回合。",
+      "why_cn": "用强化学习做交易策略时，离策略评估是回测之外验证策略的关键工具，这个结果警示了其在路径依赖环境下的根本性局限。",
+      "id": "eb059025b116",
+      "highlights": []
+    }
+  ]
+}
