@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-19",
+  "total": 9,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "网络不可达（沙箱/防火墙限制）",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/search/?searchtype=all&query=cat%3Aq-fin.%2A"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://arxiv.org/search/?searchtype=all&query=%28all%3A%22trading%22%2BOR%2Ball%3A%22financial%20market%22%29%2BAND%2B%28cat%3Acs.LG%2BOR%2Bcat%3Acs.CL%29"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "[TauricResearch/TradingAgents] Release: TradingAgents v0.7.0",
+      "url": "https://github.com/TauricResearch/TradingAgents/releases/tag/v0.7.0",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-16T21:38:46+00:00",
+      "summary_raw": "Runs on your ChatGPT plan, backtests scored from the first close after each decision, a note at start-up when a newer release is out, and a wheel attached to each GitHub release. ## Added - **Your ChatGPT plan.** The `chatgpt` provider runs TradingAgents on a ChatGPT Plus or Pro plan instead of an API key, through OpenAI's sign-in for open-source apps. Choose \"Subscription\" in the CLI's provider m",
+      "score": 9,
+      "summary_cn": "多智能体交易框架 TradingAgents 发布 v0.7.0：新增「ChatGPT 订阅」provider，可直接用 ChatGPT Plus/Pro 订阅替代 API key 驱动各分析师/交易员 Agent；回测改为从每次决策后的首个收盘价开始计分，更贴近真实成交；同时加入新版本启动提醒，并为每个 Release 附带 wheel 包。",
+      "why_cn": "LLM 多智能体交易框架头部项目的实质性迭代——订阅制降成本、回测口径更真实，直接用 Agent 做策略研究的量化从业者值得升级复测。",
+      "id": "a9d088fc8543",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Diversification All the Way Down",
+      "url": "https://alphaarchitect.com/diversification/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-16T15:28:00+00:00",
+      "summary_raw": "Diversification is not a one-time decision. It should be applied within factors, across factors, and even across time if the goal is to build a more robust multifactor portfolio. That may sound obvious in theory, but in practice many factor portfolios still lean heavily on a single signal, a single style, or a single market regime. Diversification All the Way Down was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 7,
+      "summary_cn": "Alpha Architect 指出分散化不是一次性决策，而应「一散到底」：在因子内部、因子之间、乃至时间维度上同时做分散。许多多因子组合实际上仍重度依赖单一信号、单一风格或单一市场状态，这在理论上显然，实践中却常被忽视。文章论证了全维度分散对构建稳健多因子组合的必要性。",
+      "why_cn": "对多因子/多策略组合的构建者而言，这是关于如何在信号、风格与 regime 三个层面系统性降低集中度风险的方法论提醒。",
+      "id": "148485e1cc51",
+      "highlights": []
+    },
+    {
+      "title": "Less Wrong",
+      "url": "https://www.quantitativo.com/p/less-wrong",
+      "source": "Quantitativo",
+      "side": "quant",
+      "published": "2026-10-18T13:01:43+00:00",
+      "summary_raw": "A fundamental twist on momentum leading to a 1.15 Sharpe strategy",
+      "score": 6,
+      "summary_cn": "Quantitativo 提出对传统动量因子的一种基本面改造：与其机械追逐价格动量，不如从基本面角度「少错一点」（Less Wrong），过滤掉动量信号中基本面不支持的部分。这一改造使策略夏普比率达到 1.15。文章展示了信号质量比信号数量更重要的实证案例。",
+      "why_cn": "动量因子的基本面增强是可直接落地的 alpha 改进思路，1.15 的夏普对中低频量化策略有现实参考价值。",
+      "id": "b015ab4afcc6",
+      "highlights": []
+    },
+    {
+      "title": "Does Empirical Finance Replicate? AI answers the question.",
+      "url": "https://alphaarchitect.com/empirical-finance/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-12T15:04:00+00:00",
+      "summary_raw": "Can a published result be reproduced using the original sample? And does the same result continue to hold when new data arrive? This paper separates those questions across an unusually large sample of empirical finance research. Does Empirical Finance Replicate? AI answers the question. was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 5,
+      "summary_cn": "Alpha Architect 介绍一项用 AI 大规模检验实证金融研究可复制性的工作：区分「用原始样本能否复现」与「新数据到来后结论是否仍成立」两个问题，并在异常庞大的实证金融论文样本上分别给出答案。结果显示相当一部分已发表结论在样本外难以维系。",
+      "why_cn": "量化策略多源于学术因子，了解哪些经典结论在样本外失效，直接关系到因子库的可信度与过拟合风控。",
+      "id": "0fcab6225e41",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: docs: add CLAUDE.md with commands and architecture overview",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1546",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-18T23:55:24+00:00",
+      "summary_raw": "",
+      "score": 5,
+      "summary_cn": "TradingAgents 合并了一个文档类 PR：为仓库新增 CLAUDE.md，汇总常用命令与整体架构说明，方便 Claude Code 等 AI 编程助手快速理解项目结构并参与开发。这反映出该项目正积极适配 AI 辅助开发工作流。",
+      "why_cn": "虽是小改动，但意味着用 AI 编程助手二次开发/魔改该交易框架的成本进一步降低，想基于它做定制的团队可顺手跟进。",
+      "id": "831e4b37bb2e",
+      "highlights": []
+    },
+    {
+      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+      "source": "Last Week in AI (替代 The Batch)",
+      "side": "ai",
+      "published": "2026-10-09T05:06:58+00:00",
+      "summary_raw": "OpenAI publishes hundreds of math proofs from unreleased frontier model, Mistral and Reflection AI launch open-weight models to rival China, and more!",
+      "score": 4,
+      "summary_cn": "Last Week in AI 第 346 期：OpenAI 公布了来自未发布前沿模型的 719 份数学证明手稿，展示其推理能力进展；Mistral 与 Reflection AI 各自发布开放权重模型，试图抗衡中国开源阵营；另有一起 AI 安全研究员辞职事件引发关注。",
+      "why_cn": "前沿模型推理能力与开源格局的变化直接决定量化从业者可用的底层模型能力与成本结构，是 AI 基础设施层面的风向标。",
+      "id": "c01e31c5a3a4",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/qlib] PR: fix: Make FileLock robust to the CWD (Fix #2252)",
+      "url": "https://github.com/microsoft/qlib/pull/2261",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-18T04:01:42+00:00",
+      "summary_raw": "## Description This PR fixes Issue #2252 by making FileLock path handling robust to the Current Working Directory (CWD). The previous implementation used `os.path.join`, which could incorrectly anchor absolute paths to the current working directory in certain scenarios. This change replaces that log",
+      "score": 4,
+      "summary_cn": "微软量化平台 qlib 合并了一个健壮性修复 PR：此前 FileLock 使用 os.path.join 处理锁文件路径，在某些场景下会把绝对路径错误地锚定到当前工作目录（CWD），导致锁文件位置异常。修复后路径处理对 CWD 变化不再敏感。",
+      "why_cn": "qlib 是国内量化团队常用基础设施，锁文件路径 bug 会直接影响多进程数据/实验管理的稳定性，生产用户应留意合并进主干后的升级。",
+      "id": "ba93780206d7",
+      "highlights": []
+    },
+    {
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+      "source": "Import AI",
+      "side": "ai",
+      "published": "2026-10-12T12:30:39+00:00",
+      "summary_raw": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now New benchmark shows how AI models lack intuitive visual reasoning:…Humanity’s Sixth Sense highlights some shortcomings of current AI systems…AI startups Elorian and Scale AI have built […]",
+      "score": 3,
+      "summary_cn": "Import AI 第 476 期：新基准 Humanity's Sixth Sense 显示当前 AI 模型普遍缺乏直觉式视觉推理能力；Elorian 与 Scale AI 等公司的相关动态；并讨论了「比中国开源模型还差」的西方开放权重模型现象及 AI 上太空等话题。作者延续其一贯的技术政策交叉视角。",
+      "why_cn": "了解当前模型在直觉推理上的短板，有助于判断 AI Agent 在复杂盘面理解等任务上的能力边界，避免高估自动化交易系统的认知水平。",
+      "id": "8635d0995c1d",
+      "highlights": []
+    },
+    {
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "source": "Import AI",
+      "side": "ai",
+      "published": "2026-10-05T12:32:30+00:00",
+      "summary_raw": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When should you use swarms? When you are in a hurry:…How does swarm scaling work?…Toby Ord has a nice, short post about how to think about […]",
+      "score": 2,
+      "summary_cn": "Import AI 第 475 期：讨论「群体扩展」（swarm scaling）——在什么场景下用多 Agent 群体而非单个强模型更有效，Toby Ord 对此给出了简洁的思考框架；此外报道 Google DeepMind 为生物数据加水印的工作，以及 AI 科研经济的产业化趋势。",
+      "why_cn": "多 Agent 协作的适用场景判断（如 TradingAgents 这类框架何时真正优于单模型）对设计 AI 交易系统的架构有直接启发。",
+      "id": "ece62f0713c1",
+      "highlights": []
+    }
+  ]
+}
