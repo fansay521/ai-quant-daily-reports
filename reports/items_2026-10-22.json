@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-22",
+  "total": 13,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": true,
+      "count": 15,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 429",
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/list/q-fin/recent"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22trading%22+OR+all%3A%22financial+market%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL%29&sortBy=submittedDate&sortOrder=descending"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "Recent Quant Links from Quantocracy as of 10/18/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-10-19T05:15:04+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Sunday, 10/18/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Less Wrong [Quantitativo] The biggest risk is that you have a losing strategy when you think you have a winning one. Jeff Yass Last month, while listening to […] The post Recent Quant Links from Quantocracy as of 10/18/2026 appeared first on Quantocracy .",
+      "score": 8,
+      "summary_cn": "Quantocracy 10月18日期量化链接周报，聚合了 Quantitativo、Allocate Smartly 等博客的近期精选。本期引用了 Jeff Yass 的警示——最大的风险是自以为握着盈利策略实则在亏钱，并涉及动量策略改进与回测方法论等话题。",
+      "why_cn": "一站式扫读本周量化圈高价值文章，是低成本跟踪策略研究动向的入口。",
+      "id": "0bb255f1d671",
+      "highlights": []
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 10/15/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10152026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-10-16T05:15:05+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Thursday, 10/15/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Financial Mentor’s OptimumV [Allocate Smartly] This is a test of OptimumV from Todd Tresidder of Financial Mentor. Backtested results from 1987 follow. Results are net of transaction costs […] The post Recent Quant Links from Quantocracy as of 10/15/2026 appeared first on Quantocracy .",
+      "score": 7,
+      "summary_cn": "Quantocracy 10月15日期量化链接周报，重点推荐了对 Financial Mentor 创始人 Todd Tresidder 的 OptimumV 策略的第三方测评。该测评给出 1987 年以来扣除交易成本后的回测净值表现，属于少有的长样本独立验证。",
+      "why_cn": "长样本、含成本的独立策略复测是识别卖策略营销话术的最好参照。",
+      "id": "e2b71abd02fc",
+      "highlights": []
+    },
+    {
+      "title": "Diversification All the Way Down",
+      "url": "https://alphaarchitect.com/diversification/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-16T15:28:00+00:00",
+      "summary_raw": "Diversification is not a one-time decision. It should be applied within factors, across factors, and even across time if the goal is to build a more robust multifactor portfolio. That may sound obvious in theory, but in practice many factor portfolios still lean heavily on a single signal, a single style, or a single market regime. Diversification All the Way Down was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 7,
+      "summary_cn": "Alpha Architect 提出“全层级分散化”框架：分散不应是一次性决策，而应贯穿因子内部、因子之间乃至时间维度。文章指出实践中许多多因子组合仍重度依赖单一信号、单一风格或单一市场状态，导致稳健性不足。",
+      "why_cn": "多因子组合的稳健性往往败在隐性单一暴露上，本文给出系统化的排查与改进思路。",
+      "id": "148485e1cc51",
+      "highlights": []
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 10/14/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10142026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-10-15T05:15:04+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Wednesday, 10/14/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Does More History Help? A Market-Regime HMM and the Trouble with Out-of-Sample Evaluation [Quantpedia] This paper investigates whether longer historical training periods improve the out-of-sample performance of a […] The post Recent Quant Links from Quantocracy as of 10/14/2026 appeared first on Quantocracy .",
+      "score": 6,
+      "summary_cn": "Quantocracy 10月14日期周报，亮点是 Quantpedia 一篇关于市场状态 HMM 的论文评述：更长的历史训练窗口是否能改善样本外表现。文章同时讨论了隐马尔可夫模型在状态识别中的样本外评估陷阱。",
+      "why_cn": "直接回应“训练数据越多越好吗”这一量化建模的核心疑问，对 regime-switching 策略尤有参考价值。",
+      "id": "c2908776d732",
+      "highlights": []
+    },
+    {
+      "title": "Less Wrong",
+      "url": "https://www.quantitativo.com/p/less-wrong",
+      "source": "Quantitativo",
+      "side": "quant",
+      "published": "2026-10-18T13:01:43+00:00",
+      "summary_raw": "A fundamental twist on momentum leading to a 1.15 Sharpe strategy",
+      "score": 6,
+      "summary_cn": "Quantitativo 的文章《Less Wrong》对动量因子做了一个基本面维度的改造，号称改造后策略夏普比率达 1.15。核心思路是用基本面信息过滤传统价格动量中的错误信号，降低“错得离谱”的持仓。",
+      "why_cn": "1.15 夏普的动量改进思路值得复现验证，基本面叠加动量是当下因子增强的热门方向。",
+      "id": "b015ab4afcc6",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/RD-Agent] PR: add rag file",
+      "url": "https://github.com/microsoft/RD-Agent/pull/1526",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-20T22:11:05+00:00",
+      "summary_raw": "## Description ## Motivation and Context ## How Has This Been Tested? - [ ] If you are adding a new feature, test on your own test scripts. ## Screenshots of Test Results (if appropriate): 1. Your own tests: ## Types of changes - [ ] Fix bugs - [ ] Add new feature - [ ] Update documentation ---- 📚 D",
+      "score": 6,
+      "summary_cn": "微软 RD-Agent 项目新 PR，为研发智能体引入 RAG 文件支持，增强其在量化研发自动化流程中的检索增强能力。PR 目前处于模板阶段，功能细节与测试情况尚待补充。",
+      "why_cn": "RD-Agent 是微软主打的量化研发自动化 Agent，RAG 能力意味着因子挖掘与策略生成的知识库扩展。",
+      "id": "f1840067bedd",
+      "highlights": []
+    },
+    {
+      "title": "Stock Price Bubble Dissection Requires a look at Fundamentals and Speculation",
+      "url": "https://alphaarchitect.com/stock-price-bubble/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-10-20T03:17:18+00:00",
+      "summary_raw": "The authors of this research propose a new approach to identifying stock market bubbles by combining traditional valuation data with surveys of investors' expectations. Their findings also challenge the idea that bubbles matter only to financial markets. The authors show that increases in speculative stock valuations can stimulate economic activity, reduce unemployment, and influence monetary policy, even without corresponding improvements in corporate fundamentals. Stock Price Bubble Dissection Requires a look at Fundamentals and Speculation was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 5,
+      "summary_cn": "Alpha Architect 介绍了一项股价泡沫识别研究：将传统估值数据与投资者预期调查相结合来判定泡沫。研究还发现投机性估值上升即便没有基本面支撑，也能刺激经济活动、降低失业率并影响货币政策。",
+      "why_cn": "泡沫识别叠加情绪面数据，为风险预警与择时模型提供了新的特征构造思路。",
+      "id": "6083dd5a7288",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: Let CLI users choose the OpenAI Flex service tier",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1491",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-21T20:58:31+00:00",
+      "summary_raw": "Closes #1487 Scheduled sweeps don't need fast responses, so users should be able to pick the cheaper Flex tier without editing the code. This adds TRADINGAGENTS_OPENAI_SERVICE_TIER, passed to ChatOpenAI as service_tier for the native OpenAI provider. Same pattern as TRADINGAGENTS_OPENAI_REASONING_EF",
+      "score": 5,
+      "summary_cn": "多智能体交易框架 TradingAgents 新 PR：允许 CLI 用户通过环境变量 TRADINGAGENTS_OPENAI_SERVICE_TIER 选择 OpenAI Flex 服务档位。定时批量扫描任务对响应速度不敏感，用更便宜的 Flex 档可显著降低 LLM 调用成本。",
+      "why_cn": "LLM 驱动的交易智能体跑批量回测时成本敏感，此改动直接降低日常运行开销。",
+      "id": "e6d7d030d45d",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/RD-Agent] PR: chore(deps): bump markdown-it from 14.1.1 to 14.3.1 in /web",
+      "url": "https://github.com/microsoft/RD-Agent/pull/1505",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-21T16:01:20+00:00",
+      "summary_raw": "Bumps [markdown-it](https://github.com/markdown-it/markdown-it) from 14.1.1 to 14.3.1. Changelog Sourced from markdown-it's changelog . [14.3.1] - 2026-08-27 Security Backported 15.0.1 fixes. [14.3.0] - 2026-07-02 Changed Reworked build pipeline & tools. Added source maps. Bumped linkify-it to 5.0.2",
+      "score": 5,
+      "summary_cn": "微软 RD-Agent 的依赖维护 PR，将前端 markdown-it 从 14.1.1 升级到 14.3.1，包含安全修复与构建管线改进。属常规安全维护，无功能变更。",
+      "why_cn": "常规安全更新，提醒自部署 RD-Agent 的用户同步升级前端依赖。",
+      "id": "795fa6a252f5",
+      "highlights": []
+    },
+    {
+      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+      "source": "Last Week in AI (替代 The Batch)",
+      "side": "ai",
+      "published": "2026-10-09T05:06:58+00:00",
+      "summary_raw": "OpenAI publishes hundreds of math proofs from unreleased frontier model, Mistral and Reflection AI launch open-weight models to rival China, and more!",
+      "score": 4,
+      "summary_cn": "Last Week in AI 第346期：OpenAI 公开了来自未发布前沿模型的数百份数学证明手稿；Mistral 与 Reflection AI 发布开放权重模型以抗衡中国开源阵营。此外还涉及一起 AI 安全人员辞职事件。",
+      "why_cn": "开放权重模型的竞争格局变化直接影响本地部署交易智能体的可选底座。",
+      "id": "c01e31c5a3a4",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/qlib] PR: fix: Make FileLock robust to the CWD (Fix #2252)",
+      "url": "https://github.com/microsoft/qlib/pull/2261",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-18T04:01:42+00:00",
+      "summary_raw": "## Description This PR fixes Issue #2252 by making FileLock path handling robust to the Current Working Directory (CWD). The previous implementation used `os.path.join`, which could incorrectly anchor absolute paths to the current working directory in certain scenarios. This change replaces that log",
+      "score": 4,
+      "summary_cn": "微软量化平台 qlib 修复 Issue #2252：FileLock 路径处理原先使用 os.path.join，在某些场景下会把绝对路径错误锚定到当前工作目录，导致文件锁失效。本次 PR 使 FileLock 对 CWD 变化保持稳健。",
+      "why_cn": "qlib 用户在不同目录调度任务时可能踩到文件锁坑，此修复提升多进程数据与实验管理可靠性。",
+      "id": "ba93780206d7",
+      "highlights": []
+    },
+    {
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+      "source": "Import AI",
+      "side": "ai",
+      "published": "2026-10-12T12:30:39+00:00",
+      "summary_raw": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now New benchmark shows how AI models lack intuitive visual reasoning:…Humanity’s Sixth Sense highlights some shortcomings of current AI systems…AI startups Elorian and Scale AI have built […]",
+      "score": 3,
+      "summary_cn": "Import AI 第476期：新基准 Humanity's Sixth Sense 揭示了当前 AI 模型在直觉视觉推理上的短板；Elorian 与 Scale AI 等初创的相关动态；以及西方开放权重模型落后于中国的评论。本期还涵盖创造力与 RSI 及 AI 上天等话题。",
+      "why_cn": "了解前沿模型的能力边界，有助于判断哪些投研任务可安全交给 AI、哪些仍需人工把关。",
+      "id": "8635d0995c1d",
+      "highlights": []
+    },
+    {
+      "title": "Import AI 477: In which I tell the IMF the Singularity has begun",
+      "url": "https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/",
+      "source": "Import AI",
+      "side": "ai",
+      "published": "2026-10-19T12:31:37+00:00",
+      "summary_raw": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Here’s a speech I gave on Saturday the 17th of October at the IMF meeting in Bangkok. This speech is inspired by the megatrend readers have […]",
+      "score": 2,
+      "summary_cn": "Import AI 第477期：作者 Jack Clark 在曼谷 IMF 会议上的演讲，核心论点是“奇点已经开始”。演讲从 AI 技术指数级进步的宏观趋势出发，讨论了其对经济与政策制定的含义。",
+      "why_cn": "AI 能力指数增长正在进入 IMF 级别宏观议程，长期资产配置与宏观对冲逻辑需纳入这一变量。",
+      "id": "e1ae3822da34",
+      "highlights": []
+    }
+  ]
+}

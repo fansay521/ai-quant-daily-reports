@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI × 量化交易前沿日报 — 2026-10-22</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --ink: #3d3730;
+    --ink-soft: #6b6259;
+    --accent: #b06a4f;
+    --accent-2: #4a6b5d;
+    --card: #ffffff;
+    --line: #e8e2d9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+      "Noto Sans CJK SC", "Source Han Sans SC", system-ui, -apple-system, sans-serif;
+    line-height: 1.75;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.report-head { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
+  header.report-head h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: 0.5px; }
+  header.report-head .meta { color: var(--ink-soft); font-size: 14px; }
+  header.report-head .meta b { color: var(--accent); }
+
+  .top3 {
+    background: linear-gradient(0deg, #f4efe8, #f4efe8);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0 36px;
+  }
+  .top3 h2 { margin: 0 0 10px; font-size: 17px; color: var(--accent); }
+  .top3 ol { margin: 0; padding-left: 20px; }
+  .top3 li { margin: 6px 0; font-size: 15px; }
+  .top3 a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .top3 a:hover { color: var(--accent); }
+  .top3 .src { color: var(--ink-soft); font-size: 12.5px; }
+
+  section.block { margin: 34px 0; }
+  section.block > h2 {
+    font-size: 20px;
+    color: var(--accent-2);
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 8px;
+    margin: 0 0 18px;
+  }
+  section.block > h2 .cnt { font-size: 13px; color: var(--ink-soft); font-weight: normal; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 0 0 14px;
+    box-shadow: 0 1px 2px rgba(61, 55, 48, 0.04);
+  }
+  .card h3 { margin: 0 0 8px; font-size: 16.5px; line-height: 1.5; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .badges { margin-bottom: 8px; font-size: 12px; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 1px 10px;
+    margin-right: 6px;
+    background: #f0ebe3;
+    color: var(--accent-2);
+    border: 1px solid var(--line);
+  }
+  .badge.score { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .badge.time { color: var(--ink-soft); }
+  .summary { font-size: 14.5px; color: var(--ink); margin: 0 0 8px; }
+  .why {
+    font-size: 13.5px;
+    color: var(--accent-2);
+    background: #f0ebe3;
+    border-left: 3px solid var(--accent-2);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 0 8px;
+  }
+  .card .link { font-size: 13px; }
+  .card .link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  .card .link a:hover { text-decoration: underline; }
+  .tags { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+
+  table.stats {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  table.stats th, table.stats td {
+    border: 1px solid var(--line);
+    padding: 7px 10px;
+    text-align: left;
+  }
+  table.stats th { background: #f0ebe3; color: var(--ink); }
+  td.ok { color: var(--accent-2); font-weight: 600; }
+  td.fail { color: var(--accent); font-weight: 600; }
+
+  footer { margin-top: 48px; color: var(--ink-soft); font-size: 12.5px; text-align: center; }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 48px; }
+    header.report-head h1 { font-size: 22px; }
+    .card { padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="report-head">
+  <h1>AI × 量化交易前沿日报</h1>
+  <div class="meta">
+    2026-10-22 · 共收录 <b>13</b> 条 ·
+    信息源成功 <b>7</b> / 失败 <b>5</b>
+  </div>
+</header>
+
+<div class="top3">
+  <h2>⭐ Top 3 亮点</h2>
+  <ol>
+    <li>
+      <a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/">Recent Quant Links from Quantocracy as of 10/18/2026</a>
+      <span class="src">— Quantocracy · score 8</span>
+    </li>
+    <li>
+      <a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10152026/">Recent Quant Links from Quantocracy as of 10/15/2026</a>
+      <span class="src">— Quantocracy · score 7</span>
+    </li>
+    <li>
+      <a href="https://alphaarchitect.com/diversification/">Diversification All the Way Down</a>
+      <span class="src">— Alpha Architect · score 7</span>
+    </li>
+  </ol>
+</div>
+
+<section class="block">
+  <h2>【量化精选】 <span class="cnt">6 条</span></h2>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/">Recent Quant Links from Quantocracy as of 10/18/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 8</span>
+      <span class="badge time">10-19 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 10月18日期量化链接周报，聚合了 Quantitativo、Allocate Smartly 等博客的近期精选。本期引用了 Jeff Yass 的警示——最大的风险是自以为握着盈利策略实则在亏钱，并涉及动量策略改进与回测方法论等话题。</p>
+    <p class="why">💡 为何关注：一站式扫读本周量化圈高价值文章，是低成本跟踪策略研究动向的入口。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10152026/">Recent Quant Links from Quantocracy as of 10/15/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-16 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 10月15日期量化链接周报，重点推荐了对 Financial Mentor 创始人 Todd Tresidder 的 OptimumV 策略的第三方测评。该测评给出 1987 年以来扣除交易成本后的回测净值表现，属于少有的长样本独立验证。</p>
+    <p class="why">💡 为何关注：长样本、含成本的独立策略复测是识别卖策略营销话术的最好参照。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10152026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://alphaarchitect.com/diversification/">Diversification All the Way Down</a></h3>
+    <div class="badges">
+      <span class="badge">Alpha Architect</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-16 15:28 UTC</span>
+    </div>
+    <p class="summary">Alpha Architect 提出“全层级分散化”框架：分散不应是一次性决策，而应贯穿因子内部、因子之间乃至时间维度。文章指出实践中许多多因子组合仍重度依赖单一信号、单一风格或单一市场状态，导致稳健性不足。</p>
+    <p class="why">💡 为何关注：多因子组合的稳健性往往败在隐性单一暴露上，本文给出系统化的排查与改进思路。</p>
+    <div class="link"><a href="https://alphaarchitect.com/diversification/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10142026/">Recent Quant Links from Quantocracy as of 10/14/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-15 05:15 UTC</span>
+    </div>
+    <p class="summary">Quantocracy 10月14日期周报，亮点是 Quantpedia 一篇关于市场状态 HMM 的论文评述：更长的历史训练窗口是否能改善样本外表现。文章同时讨论了隐马尔可夫模型在状态识别中的样本外评估陷阱。</p>
+    <p class="why">💡 为何关注：直接回应“训练数据越多越好吗”这一量化建模的核心疑问，对 regime-switching 策略尤有参考价值。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10142026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://www.quantitativo.com/p/less-wrong">Less Wrong</a></h3>
+    <div class="badges">
+      <span class="badge">Quantitativo</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-18 13:01 UTC</span>
+    </div>
+    <p class="summary">Quantitativo 的文章《Less Wrong》对动量因子做了一个基本面维度的改造，号称改造后策略夏普比率达 1.15。核心思路是用基本面信息过滤传统价格动量中的错误信号，降低“错得离谱”的持仓。</p>
+    <p class="why">💡 为何关注：1.15 夏普的动量改进思路值得复现验证，基本面叠加动量是当下因子增强的热门方向。</p>
+    <div class="link"><a href="https://www.quantitativo.com/p/less-wrong">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://alphaarchitect.com/stock-price-bubble/">Stock Price Bubble Dissection Requires a look at Fundamentals and Speculation</a></h3>
+    <div class="badges">
+      <span class="badge">Alpha Architect</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">10-20 03:17 UTC</span>
+    </div>
+    <p class="summary">Alpha Architect 介绍了一项股价泡沫识别研究：将传统估值数据与投资者预期调查相结合来判定泡沫。研究还发现投机性估值上升即便没有基本面支撑，也能刺激经济活动、降低失业率并影响货币政策。</p>
+    <p class="why">💡 为何关注：泡沫识别叠加情绪面数据，为风险预警与择时模型提供了新的特征构造思路。</p>
+    <div class="link"><a href="https://alphaarchitect.com/stock-price-bubble/">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【AI 前沿】 <span class="cnt">3 条</span></h2>
+  <article class="card">
+    <h3><a href="https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts">Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation</a></h3>
+    <div class="badges">
+      <span class="badge">Last Week in AI (替代 The Batch)</span>
+      <span class="badge score">score 4</span>
+      <span class="badge time">10-09 05:06 UTC</span>
+    </div>
+    <p class="summary">Last Week in AI 第346期：OpenAI 公开了来自未发布前沿模型的数百份数学证明手稿；Mistral 与 Reflection AI 发布开放权重模型以抗衡中国开源阵营。此外还涉及一起 AI 安全人员辞职事件。</p>
+    <p class="why">💡 为何关注：开放权重模型的竞争格局变化直接影响本地部署交易智能体的可选底座。</p>
+    <div class="link"><a href="https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/">Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space</a></h3>
+    <div class="badges">
+      <span class="badge">Import AI</span>
+      <span class="badge score">score 3</span>
+      <span class="badge time">10-12 12:30 UTC</span>
+    </div>
+    <p class="summary">Import AI 第476期：新基准 Humanity's Sixth Sense 揭示了当前 AI 模型在直觉视觉推理上的短板；Elorian 与 Scale AI 等初创的相关动态；以及西方开放权重模型落后于中国的评论。本期还涵盖创造力与 RSI 及 AI 上天等话题。</p>
+    <p class="why">💡 为何关注：了解前沿模型的能力边界，有助于判断哪些投研任务可安全交给 AI、哪些仍需人工把关。</p>
+    <div class="link"><a href="https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/">Import AI 477: In which I tell the IMF the Singularity has begun</a></h3>
+    <div class="badges">
+      <span class="badge">Import AI</span>
+      <span class="badge score">score 2</span>
+      <span class="badge time">10-19 12:31 UTC</span>
+    </div>
+    <p class="summary">Import AI 第477期：作者 Jack Clark 在曼谷 IMF 会议上的演讲，核心论点是“奇点已经开始”。演讲从 AI 技术指数级进步的宏观趋势出发，讨论了其对经济与政策制定的含义。</p>
+    <p class="why">💡 为何关注：AI 能力指数增长正在进入 IMF 级别宏观议程，长期资产配置与宏观对冲逻辑需纳入这一变量。</p>
+    <div class="link"><a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【开源项目动态】 <span class="cnt">4 条</span></h2>
+  <article class="card">
+    <h3><a href="https://github.com/microsoft/RD-Agent/pull/1526">[microsoft/RD-Agent] PR: add rag file</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-20 22:11 UTC</span>
+    </div>
+    <p class="summary">微软 RD-Agent 项目新 PR，为研发智能体引入 RAG 文件支持，增强其在量化研发自动化流程中的检索增强能力。PR 目前处于模板阶段，功能细节与测试情况尚待补充。</p>
+    <p class="why">💡 为何关注：RD-Agent 是微软主打的量化研发自动化 Agent，RAG 能力意味着因子挖掘与策略生成的知识库扩展。</p>
+    <div class="link"><a href="https://github.com/microsoft/RD-Agent/pull/1526">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/TauricResearch/TradingAgents/pull/1491">[TauricResearch/TradingAgents] PR: Let CLI users choose the OpenAI Flex service tier</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">10-21 20:58 UTC</span>
+    </div>
+    <p class="summary">多智能体交易框架 TradingAgents 新 PR：允许 CLI 用户通过环境变量 TRADINGAGENTS_OPENAI_SERVICE_TIER 选择 OpenAI Flex 服务档位。定时批量扫描任务对响应速度不敏感，用更便宜的 Flex 档可显著降低 LLM 调用成本。</p>
+    <p class="why">💡 为何关注：LLM 驱动的交易智能体跑批量回测时成本敏感，此改动直接降低日常运行开销。</p>
+    <div class="link"><a href="https://github.com/TauricResearch/TradingAgents/pull/1491">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/microsoft/RD-Agent/pull/1505">[microsoft/RD-Agent] PR: chore(deps): bump markdown-it from 14.1.1 to 14.3.1 in /web</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">10-21 16:01 UTC</span>
+    </div>
+    <p class="summary">微软 RD-Agent 的依赖维护 PR，将前端 markdown-it 从 14.1.1 升级到 14.3.1，包含安全修复与构建管线改进。属常规安全维护，无功能变更。</p>
+    <p class="why">💡 为何关注：常规安全更新，提醒自部署 RD-Agent 的用户同步升级前端依赖。</p>
+    <div class="link"><a href="https://github.com/microsoft/RD-Agent/pull/1505">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/microsoft/qlib/pull/2261">[microsoft/qlib] PR: fix: Make FileLock robust to the CWD (Fix #2252)</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 4</span>
+      <span class="badge time">10-18 04:01 UTC</span>
+    </div>
+    <p class="summary">微软量化平台 qlib 修复 Issue #2252：FileLock 路径处理原先使用 os.path.join，在某些场景下会把绝对路径错误锚定到当前工作目录，导致文件锁失效。本次 PR 使 FileLock 对 CWD 变化保持稳健。</p>
+    <p class="why">💡 为何关注：qlib 用户在不同目录调度任务时可能踩到文件锁坑，此修复提升多进程数据与实验管理可靠性。</p>
+    <div class="link"><a href="https://github.com/microsoft/qlib/pull/2261">阅读原文 ↗</a></div>
+  </article>
+</section>
+
+<section class="block">
+  <h2>信息源抓取状态</h2>
+  <table class="stats">
+    <thead>
+      <tr><th>信息源</th><th>类型</th><th>侧别</th><th>状态</th><th>条数</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Quantocracy</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Hugging Face Daily Papers</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>15</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/algotrading/" target="_blank" rel="noopener noreferrer">r/algotrading</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/quant/" target="_blank" rel="noopener noreferrer">r/quant</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/MachineLearning/" target="_blank" rel="noopener noreferrer">r/MachineLearning</a></td>
+        <td>reddit</td>
+        <td>ai</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/list/q-fin/recent" target="_blank" rel="noopener noreferrer">arXiv q-fin</a></td>
+        <td>arxiv</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 429</td>
+      </tr>
+      <tr>
+        <td><a href="https://export.arxiv.org/api/query?search_query=%28all%3A%22trading%22+OR+all%3A%22financial+market%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL%29&sortBy=submittedDate&sortOrder=descending" target="_blank" rel="noopener noreferrer">arXiv AI+Finance 搜索</a></td>
+        <td>arxiv</td>
+        <td>both</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>连接超时</td>
+      </tr>
+      <tr>
+        <td>Alpha Architect</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>5</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Quantitativo</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Last Week in AI (替代 The Batch)</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Import AI</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>GitHub 项目动态</td>
+        <td>github</td>
+        <td>both</td>
+        <td class="ok">✅ 成功</td>
+        <td>4</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>由 ai-quant-daily 自动生成 · 2026-10-22</footer>
+
+</div>
+</body>
+</html>
