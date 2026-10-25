@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI × 量化交易前沿日报 — 2026-10-25</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --ink: #3d3730;
+    --ink-soft: #6b6259;
+    --accent: #b06a4f;
+    --accent-2: #4a6b5d;
+    --card: #ffffff;
+    --line: #e8e2d9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+      "Noto Sans CJK SC", "Source Han Sans SC", system-ui, -apple-system, sans-serif;
+    line-height: 1.75;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.report-head { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
+  header.report-head h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: 0.5px; }
+  header.report-head .meta { color: var(--ink-soft); font-size: 14px; }
+  header.report-head .meta b { color: var(--accent); }
+
+  .top3 {
+    background: linear-gradient(0deg, #f4efe8, #f4efe8);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0 36px;
+  }
+  .top3 h2 { margin: 0 0 10px; font-size: 17px; color: var(--accent); }
+  .top3 ol { margin: 0; padding-left: 20px; }
+  .top3 li { margin: 6px 0; font-size: 15px; }
+  .top3 a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .top3 a:hover { color: var(--accent); }
+  .top3 .src { color: var(--ink-soft); font-size: 12.5px; }
+
+  section.block { margin: 34px 0; }
+  section.block > h2 {
+    font-size: 20px;
+    color: var(--accent-2);
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 8px;
+    margin: 0 0 18px;
+  }
+  section.block > h2 .cnt { font-size: 13px; color: var(--ink-soft); font-weight: normal; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 0 0 14px;
+    box-shadow: 0 1px 2px rgba(61, 55, 48, 0.04);
+  }
+  .card h3 { margin: 0 0 8px; font-size: 16.5px; line-height: 1.5; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .badges { margin-bottom: 8px; font-size: 12px; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 1px 10px;
+    margin-right: 6px;
+    background: #f0ebe3;
+    color: var(--accent-2);
+    border: 1px solid var(--line);
+  }
+  .badge.score { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .badge.time { color: var(--ink-soft); }
+  .summary { font-size: 14.5px; color: var(--ink); margin: 0 0 8px; }
+  .why {
+    font-size: 13.5px;
+    color: var(--accent-2);
+    background: #f0ebe3;
+    border-left: 3px solid var(--accent-2);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 0 8px;
+  }
+  .card .link { font-size: 13px; }
+  .card .link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  .card .link a:hover { text-decoration: underline; }
+  .tags { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+
+  table.stats {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  table.stats th, table.stats td {
+    border: 1px solid var(--line);
+    padding: 7px 10px;
+    text-align: left;
+  }
+  table.stats th { background: #f0ebe3; color: var(--ink); }
+  td.ok { color: var(--accent-2); font-weight: 600; }
+  td.fail { color: var(--accent); font-weight: 600; }
+
+  footer { margin-top: 48px; color: var(--ink-soft); font-size: 12.5px; text-align: center; }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 48px; }
+    header.report-head h1 { font-size: 22px; }
+    .card { padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="report-head">
+  <h1>AI × 量化交易前沿日报</h1>
+  <div class="meta">
+    2026-10-25 · 共收录 <b>20</b> 条 ·
+    信息源成功 <b>9</b> / 失败 <b>3</b>
+  </div>
+</header>
+
+<div class="top3">
+  <h2>⭐ Top 3 亮点</h2>
+  <ol>
+    <li>
+      <a href="https://arxiv.org/abs/2610.30564v1">When News Gets Old: Portfolio Allocation with Reinforcement Learning and Large Language Models</a>
+      <span class="src">— arXiv q-fin · score 12</span>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2610.30557v1">Governed Self-Evolution for Autonomous Investing: A Multi-Agent LLM System with an Invariant Core</a>
+      <span class="src">— arXiv q-fin · score 12</span>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2610.29663v1">Lineage-Aware Search Control for LLM-Based Evolutionary Factor Mining</a>
+      <span class="src">— arXiv q-fin · score 12</span>
+    </li>
+  </ol>
+</div>
+
+<section class="block">
+  <h2>【量化精选】 <span class="cnt">11 条</span></h2>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/">Recent Quant Links from Quantocracy as of 10/18/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 8</span>
+      <span class="badge time">10-19 05:15 UTC</span>
+    </div>
+    <p class="summary">这是 Quantocracy 截至 10 月 18 日的量化链接精选，汇集了策略研究、风险认知和市场评论等近期内容。其中包括 Quantitativo 对动量策略的“Less Wrong”讨论，以及 Jeff Yass 关于误把亏损策略当作盈利策略这一根本风险的提醒。</p>
+    <p class="why">💡 为何关注：它适合作为量化研究雷达，快速跟踪社区正在讨论的策略改进与过拟合风险。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10182026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10222026/">Recent Quant Links from Quantocracy as of 10/22/2026</a></h3>
+    <div class="badges">
+      <span class="badge">Quantocracy</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-23 05:15 UTC</span>
+    </div>
+    <p class="summary">这是 Quantocracy 截至 10 月 22 日的量化链接精选，重点汇集了趋势、动量和策略评估方面的外部文章。被收录内容之一是用标普 500 最强趋势阶段的变化率来调节动量暴露，尝试改进这一历史悠久的交易思想。</p>
+    <p class="why">💡 为何关注：它提供了可快速扫描的策略研究入口，尤其适合寻找动量择时和趋势过滤的新变体。</p>
+    <div class="link"><a href="https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10222026/">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.31074v1">Directionally Correct Views in Portfolio Optimization</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-22 10:51 UTC</span>
+    </div>
+    <p class="summary">论文借鉴 Black-Litterman 框架，研究在 Markowitz 型组合优化中加入专家方向性观点是否能改善配置。结果显示，即使少量方向正确的信息也能显著改善投资决策，作者还讨论了如何用熵相关方法把专家观点纳入端到端组合模型。</p>
+    <p class="why">💡 为何关注：它为人工判断、LLM 观点或宏观信号如何规范地进入组合优化提供了清晰依据。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.31074v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30891v1">Equilibria and Learning in Competitive Market Making</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-22 08:09 UTC</span>
+    </div>
+    <p class="summary">论文构建一个由多个策略性做市商和单一非策略代表交易者组成的连续报价做市博弈，并处理非凸、非连续收益带来的均衡与学习困难。作者证明在资产价值分布的最小假设下纯策略纳什均衡总存在，且均衡买卖价差会随资产价值波动率严格扩大。</p>
+    <p class="why">💡 为何关注：它把做市竞争、价差形成和波动率联系起来，对高频做市策略与多代理市场仿真都有直接参考价值。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30891v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30637v1">Multiple Stopping and Exercise Boundaries for American Put Options</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-22 02:57 UTC</span>
+    </div>
+    <p class="summary">文章研究有限期限内最多可行权 m 次、相邻行权之间必须有冷却期的美式看跌期权。作者证明在每种剩余行权次数下最优策略由单一行权边界刻画，这些边界随剩余权利数量有序排列，并满足局部 Lipschitz 连续性。</p>
+    <p class="why">💡 为何关注：它为多次行权、路径受限期权和对冲工具的定价与执行算法提供了可落地的边界结构。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30637v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.29578v1">What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-21 11:20 UTC</span>
+    </div>
+    <p class="summary">作者使用 2023 年 1 月至 2026 年 5 月 Polymarket 上 802,863 个已结算市场的近全量数据，仅用上线时的标题、描述、结算来源和合约元数据预测生命周期成交量与结算争议。模型对成交量预测表现很强，样本外对数成交量 R² 达 0.747，且主题、措辞和结算规则设计都提供可解释信号。</p>
+    <p class="why">💡 为何关注：它说明合约文本本身就能预测流动性和争议风险，对预测市场做市、事件交易和新合约筛选很有价值。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.29578v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.28863v1">A game-theoretic analysis of the market microstructure in decentralized exchanges with concentrated liquidity</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-20 19:34 UTC</span>
+    </div>
+    <p class="summary">论文把集中流动性去中心化交易所中的策略性流动性供给建模为平均场博弈，流动性提供者需要选择价格区间宽度和再平衡时机。模型以受控连续时间马尔可夫链刻画个体区间、交易成本、手续费分配和群体状态之间的相互作用。</p>
+    <p class="why">💡 为何关注：它为 Uniswap V3 类做市中的区间选择、调仓频率和费用收益权衡提供了博弈论基础。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.28863v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.31141v1">Intraday Forecasting Ability and Liquidity Provision of Institutional Traders</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-22 12:00 UTC</span>
+    </div>
+    <p class="summary">研究利用交易所高频数据分析机构交易者的日内预测能力、流动性供给与自营盈利之间的关系。作者发现部分交易者具有持续预测能力，基于这些熟练交易者执行流构建的假设跟随策略在不同频率下展现出极高年化 Sharpe，并把已实现盈亏与对应期限的预测代理变量相连接。</p>
+    <p class="why">💡 为何关注：它为识别聪明订单流、构造日内跟随信号以及评估流动性供给价值提供了实证依据。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.31141v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.31038v1">Multichoice Modeling: Exploring Decision Configuration Space under Uncertainty</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-22 10:16 UTC</span>
+    </div>
+    <p class="summary">论文提出“多选择建模”，把复杂决策的配置空间显式展开，而不是在分析不确定性前过早收窄备选架构。借助崎岖适应度景观的思想，该框架将决策问题视作情境化绩效景观，使不同选择组合及其交互能够被计算化探索。</p>
+    <p class="why">💡 为何关注：它可启发量化研究者把策略组件、组合约束和执行方案作为整体配置空间优化，而非孤立调参。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.31038v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30539v1">Dynamics of the Liquidity Profile in Concentrated Liquidity Provision: An SPIDE Approach</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-21 23:53 UTC</span>
+    </div>
+    <p class="summary">作者用随机偏积分微分方程刻画 Uniswap V3 等集中流动性 AMM 的流动性剖面动态。模型用退化 Sturm-Liouville 算子描述流动性围绕市场价格的均值回复集中，并用 Hilbert-Schmidt 积分算子捕捉提供者重新定位造成的非局部再分配，同时证明弱解的存在唯一性。</p>
+    <p class="why">💡 为何关注：它为集中流动性池的流动性演化、冲击传播和 LP 风险建模提供了更严格的连续时间框架。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30539v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://www.quantitativo.com/p/less-wrong">Less Wrong</a></h3>
+    <div class="badges">
+      <span class="badge">Quantitativo</span>
+      <span class="badge score">score 6</span>
+      <span class="badge time">10-18 13:01 UTC</span>
+    </div>
+    <p class="summary">Quantitativo 的这篇文章提出对经典动量进行一个基础但有价值的改造，并报告了 Sharpe 比率约 1.15 的策略结果。标题同时提醒读者，策略研究中最危险的情形是误以为自己拥有盈利策略，而实际上它可能只是回测偏差或错误的产物。</p>
+    <p class="why">💡 为何关注：它把可交易的动量改进与策略证伪意识结合起来，适合用来检查动量策略的稳健性和研究流程。</p>
+    <div class="link"><a href="https://www.quantitativo.com/p/less-wrong">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【AI 前沿】 <span class="cnt">1 条</span></h2>
+  <article class="card">
+    <h3><a href="https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/">Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space</a></h3>
+    <div class="badges">
+      <span class="badge">Import AI</span>
+      <span class="badge score">score 3</span>
+      <span class="badge time">10-12 12:30 UTC</span>
+    </div>
+    <p class="summary">Import AI 第 476 期讨论了模型创造力与 RSI、开放权重模型竞争格局，以及 AI 进入太空应用等话题。本期还提到新的视觉推理基准显示当前 AI 系统仍缺乏直觉式空间理解能力。</p>
+    <p class="why">💡 为何关注：它帮助 AI 交易者跟踪基础模型能力边界与开源生态变化，避免把尚未具备的推理能力误用于研究和交易自动化。</p>
+    <div class="link"><a href="https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【交叉热点（quant×ai）】 <span class="cnt">6 条</span></h2>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30564v1">When News Gets Old: Portfolio Allocation with Reinforcement Learning and Large Language Models</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 12</span>
+      <span class="badge time">10-22 00:44 UTC</span>
+    </div>
+    <p class="summary">论文研究财经新闻信号随时间衰减后应如何进入组合决策：是保留旧信号并显式提供时间信息，还是在组合选择前过滤掉。作者用固定 LLM 从 SEC 公开披露中提取信号，并比较强化学习策略与直接选组合的 LLM，在计入交易费用的历史测试中评估效果。</p>
+    <p class="why">💡 为何关注：它直接触及量化交易中最常见却最容易被忽略的信号时效性，并给出了 LLM 信号与 RL 组合管理的可复现结合方式。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30564v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30557v1">Governed Self-Evolution for Autonomous Investing: A Multi-Agent LLM System with an Invariant Core</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 12</span>
+      <span class="badge time">10-22 00:22 UTC</span>
+    </div>
+    <p class="summary">Steward 是一个面向自主投资的九角色多智能体 LLM 系统，由分析新闻、SEC 文件、宏观序列和市场数据的代理输出带类型报告，再由组合经理生成目标仓位。其核心设计是在类型系统中划定自我进化边界，让系统能从结果中学习，同时不削弱安全约束。</p>
+    <p class="why">💡 为何关注：它为会真实下单的 AI 投资代理提供了兼顾自我改进、审计和风控边界的工程蓝图。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30557v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.29663v1">Lineage-Aware Search Control for LLM-Based Evolutionary Factor Mining</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 12</span>
+      <span class="badge time">10-21 12:40 UTC</span>
+    </div>
+    <p class="summary">论文指出传统 LLM 进化式因子挖掘过度依赖个体和种群层面的随机变异，容易使搜索方向薄弱并聚集在结构相似的因子上。作者提出在“谱系”层面进行搜索控制，以更系统地组织 LLM 作为语义变异算子的探索过程。</p>
+    <p class="why">💡 为何关注：它有望提升自动化 Alpha 因子挖掘的多样性、方向性和可解释性，减少无效因子冗余。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://arxiv.org/abs/2610.29663v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.29652v1">Distributions or Quantiles? A Convex Variational Theory of Worst-Case Risk</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv q-fin</span>
+      <span class="badge score">score 11</span>
+      <span class="badge time">10-21 12:34 UTC</span>
+    </div>
+    <p class="summary">文章以谱风险度量为基础，建立统一的最坏情形风险凸变分理论，并解释何时应使用分布或分位数表示以保持完整模糊集的凸性。该框架把原先分散在不同模糊集结构中的结果推广到更丰富的稳健风险模型，并给出识别最坏情形的系统条件。</p>
+    <p class="why">💡 为何关注：这为压力测试、尾部风险预算和分布不确定性下的组合风险控制提供了更统一的数学工具。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://arxiv.org/abs/2610.29652v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.30469v1">Learning to Incentivise: Using Reinforcement Learning for Sustainable Urban Mobility</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv AI+Finance 搜索</span>
+      <span class="badge score">score 7</span>
+      <span class="badge time">10-21 21:40 UTC</span>
+    </div>
+    <p class="summary">论文把城市出行激励分配视为动态优化问题，用多智能体强化学习鼓励司机改道到更优替代路径。目标是在不依赖传统道路收费的情况下降低全网总出行时间和排放，从而支持可持续城市交通。</p>
+    <p class="why">💡 为何关注：虽然场景不在金融市场，其多智能体激励设计与强化学习机制可迁移到做市激励、交易路由和资源分配问题。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.30469v1">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://arxiv.org/abs/2610.31667v1">Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</a></h3>
+    <div class="badges">
+      <span class="badge">arXiv AI+Finance 搜索</span>
+      <span class="badge score">score 5</span>
+      <span class="badge time">10-22 17:59 UTC</span>
+    </div>
+    <p class="summary">论文研究测试时推理扩展中的候选剪枝：模型先生成大量短前缀，再决定哪些候选值得继续消耗算力。作者提出直接优化 Pass@k 的思想剪枝方法，在候选最终质量与多样性之间取得更好的平衡。</p>
+    <p class="why">💡 为何关注：它能降低 AI 交易代理在研究、代码生成和复杂决策中的推理成本，同时保留多路径探索能力。</p>
+    <div class="link"><a href="https://arxiv.org/abs/2610.31667v1">阅读原文 ↗</a></div>
+  </article>
+</section>
+<section class="block">
+  <h2>【开源项目动态】 <span class="cnt">2 条</span></h2>
+  <article class="card">
+    <h3><a href="https://github.com/TauricResearch/TradingAgents/pull/1561">[TauricResearch/TradingAgents] PR: fix(portfolio): match held tickers under broker aliases</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 10</span>
+      <span class="badge time">10-24 11:16 UTC</span>
+    </div>
+    <p class="summary">该 TradingAgents 修复解决券商交易代码与规范代码不一致的问题，例如持仓使用 BTCUSDT 而分析器使用 BTC-USD 时会被误判为无持仓。修复后，别名持仓能被正确识别，避免单位落入“其他持仓”并继续向交易和风控模块传递错误上下文。</p>
+    <p class="why">💡 为何关注：这类看似细小的符号归一化错误会直接污染仓位、风险和交易决策，是实盘 AI 代理必须消除的基础缺陷。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://github.com/TauricResearch/TradingAgents/pull/1561">阅读原文 ↗</a></div>
+  </article>
+  <article class="card">
+    <h3><a href="https://github.com/microsoft/RD-Agent/pull/1502">[microsoft/RD-Agent] PR: fix: return each analyzed error once in analyze_error</a></h3>
+    <div class="badges">
+      <span class="badge">GitHub 项目动态</span>
+      <span class="badge score">score 10</span>
+      <span class="badge time">10-23 02:06 UTC</span>
+    </div>
+    <p class="summary">微软 RD-Agent 的该 PR 修复了 CoSTEERRAGStrategyV2.analyze_error 在知识图谱同时包含匹配节点和其他错误节点时重复返回同一错误的问题。修改后，每个已分析错误只返回一次，避免节点对象与字符串混合造成重复诊断。</p>
+    <p class="why">💡 为何关注：更可靠的错误归因会提升自动化研发与量化实验代理的调试效率，减少重复修复和错误上下文累积。</p>
+    <div class="tags">标签：quant x ai 交叉</div>
+    <div class="link"><a href="https://github.com/microsoft/RD-Agent/pull/1502">阅读原文 ↗</a></div>
+  </article>
+</section>
+
+<section class="block">
+  <h2>信息源抓取状态</h2>
+  <table class="stats">
+    <thead>
+      <tr><th>信息源</th><th>类型</th><th>侧别</th><th>状态</th><th>条数</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Quantocracy</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Hugging Face Daily Papers</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>15</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/algotrading/" target="_blank" rel="noopener noreferrer">r/algotrading</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/quant/" target="_blank" rel="noopener noreferrer">r/quant</a></td>
+        <td>reddit</td>
+        <td>quant</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.reddit.com/r/MachineLearning/" target="_blank" rel="noopener noreferrer">r/MachineLearning</a></td>
+        <td>reddit</td>
+        <td>ai</td>
+        <td class="fail">❌ 失败</td>
+        <td>0</td>
+        <td>HTTP 403</td>
+      </tr>
+      <tr>
+        <td>arXiv q-fin</td>
+        <td>arxiv</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>12</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>arXiv AI+Finance 搜索</td>
+        <td>arxiv</td>
+        <td>both</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Alpha Architect</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>5</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Quantitativo</td>
+        <td>rss</td>
+        <td>quant</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Last Week in AI (替代 The Batch)</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Import AI</td>
+        <td>rss</td>
+        <td>ai</td>
+        <td class="ok">✅ 成功</td>
+        <td>10</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>GitHub 项目动态</td>
+        <td>github</td>
+        <td>both</td>
+        <td class="ok">✅ 成功</td>
+        <td>3</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>由 ai-quant-daily 自动生成 · 2026-10-25</footer>
+
+</div>
+</body>
+</html>
