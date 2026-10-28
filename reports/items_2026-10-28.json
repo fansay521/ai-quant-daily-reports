@@ -1,0 +1,356 @@
+{
+  "date": "2026-10-28",
+  "total": 18,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/list/q-fin/recent",
+      "note": "Agent 联网补抓（沙箱直连/代理均不可达）"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22trading%22+OR+all%3A%22financial+market%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL%29&sortBy=submittedDate&sortOrder=descending"
+    },
+    "Alpha Architect": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": false,
+      "count": 0,
+      "error": "连接超时",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "Certifying Reward Alignment in Portfolio Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.34153v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-25T08:38:59+00:00",
+      "summary_raw": "Financial reinforcement learning often translates an investment objective into an additive risk-adjusted reward. An agent can optimise that reward accurately yet implement a different financial preference. We develop a decision audit for terminal mean-variance equilibrium that separates reward misspecification from learning error. In a finite exogenous-state market, we bound the gain from changing one action using actor, reward and continuation-critic residuals. The certificate ignores state-constant critic offsets, accommodates convex action constraints, and has an independent-sample extension that does not require the equilibrium policy. A continuation-aware actor-critic method estimates the future-policy correction from samples. Across nine controlled markets and twenty seeds, it reduces policy distance and one-step deviation gain relative to a matched myopic-reward network. Historical tests cross seven covariance estimators and 10, 30 and 49 US industry portfolios over 432 months: joint reward calibration preserves each fitted mean-variance target, but does not improve realised investment performance. Together, these results provide a way to quantify whether a learned decision implements its stated financial objective, separately from how well that objective performs in a backtest.",
+      "score": 14,
+      "summary_cn": "论文指出金融强化学习中一个隐蔽问题：智能体可能精确优化了奖励函数，却并未真正实现投资者声明的均值-方差偏好。作者提出一套“决策审计”方法，利用 actor、奖励与延续 critic 的残差为单步偏离收益划出上界，从而把奖励设定错误与学习误差分离开来。在九个受控市场与七类协方差估计、432 个月美国行业组合的历史测试中，联合奖励校准能保住目标偏好，但并不必然改善实盘表现。",
+      "why_cn": "它让你能量化验证 RL 交易策略是否真正执行了预设目标，而不是只盯着回测收益自欺。",
+      "id": "5fcb59c48241",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Det-MASO: Diversity-Regularized Multi-Agent Sequential Optimization for Factor Generation",
+      "url": "https://arxiv.org/abs/2610.34936v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-26T07:03:00+00:00",
+      "summary_raw": "Quantitative investment requires alpha factors that are both predictive and diverse. However, existing factor generation methods, including formulaic mining and neural end-to-end models, are mostly based on a single-agent design, which limits exploration of the factor space and reduces adaptability to changing markets. Multi-agent approaches can broaden exploration, but agents trained under a shared objective often collapse to similar outputs, while existing diversity techniques either scale poorly with asset-universe size or address redundancy only after training. We propose a multi-agent sequential optimization (Det-MASO) framework for generating diversified, context-adaptive alpha factors. It introduces a differentiable log-determinant penalty on the inter-agent correlation matrix directly into the joint objective, discouraging correlated agent behavior during training with computational cost that scales linearly with the number of assets. We further show that this penalty prevents homogeneous equilibria and preserves factor diversity throughout optimization, while a context-conditioned scheduler dynamically adjusts agent emphasis across market regimes and Shapley interaction index analysis is used to characterize the cooperation structure that emerges among them. Experiments show that Det-MASO outperforms baselines, improving the information coefficient by 1.1%, the annualized return by 6.4%, and the Sharpe ratio by 0.33.",
+      "score": 13,
+      "summary_cn": "针对 LLM/多智能体因子挖掘中“多智能体趋同坍缩”的痛点，Det-MASO 在联合目标中引入可微的 log-det 相关性惩罚，直接抑制智能体间输出同质化，且计算成本随资产数量线性扩展。框架还配有情境调度器按市场状态动态调整各智能体权重，并用 Shapley 交互指数刻画协作结构。实验显示信息系数提升 1.1%、年化收益提升 6.4%、夏普比率提高 0.33。",
+      "why_cn": "它为自动化 alpha 因子生成提供了兼顾多样性与适应性的新范式，直接可用于多智能体投研流水线。",
+      "id": "5f4f3042ce6b",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "What FLARE's Published Numbers Actually Measure",
+      "url": "https://arxiv.org/abs/2610.33604v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-24T11:03:48+00:00",
+      "summary_raw": "We audit the scoring pipeline of FLARE, the financial task suite behind PIXIU and FinBen, and find that in a decisive fraction of cells the score is a property of the answer-extraction rule, not the model. The clearest evidence is already published: of the 34 released Headlines scores, nine equal to four decimals what the benchmark's own code returns when no output is byte-equal to Yes, and only four clear the per-stratum majority floor. FLARE credits the first entry of the dataset card's choices list found anywhere in a generation; the lm-evaluation-harness it forks takes the first match by position; on identical generations the two differ by up to 0.4216 accuracy, and no leaderboard states which rule produced its numbers. Across a 204-cell factorial and a 46-cell diagnostic, 10 cells are certified invariant to the rule, 4 only because almost nothing parses. On Financial PhraseBank four of seven models fall below the 0.5948 majority floor under one shipped rule and clear it under the other; on three of four substring-scored tasks no open-weight model we test is distinguishable from a degenerate predictor. Reading a FLARE score needs three quantities it does not report -- ambiguity rate, coverage, floor -- and floorbench computes all three from generations already produced.",
+      "score": 12,
+      "summary_cn": "作者审计了 PIXIU/FinBen 背后的 FLARE 金融评测套件，发现相当比例的得分其实是“答案抽取规则”的产物而非模型能力：同一批生成结果在不同抽取规则下准确率最多相差 0.42，34 个已发布的 Headlines 分数中有 9 个与“全否”退化输出完全一致。多数榜单甚至不声明使用了哪套规则，部分任务上没有任何开源模型能超越退化基线。作者给出 floorbench 工具计算歧义率、覆盖率与多数票下限。",
+      "why_cn": "凡是用金融 LLM 榜单选型或论证策略有效性的人，都需要先搞清分数到底测的是什么。",
+      "id": "1fa8080edb39",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Compiling and forecasting implied volatility surfaces via survey sampling, tempered inverse-probability sequence learning, and causal activity clocks",
+      "url": "https://arxiv.org/abs/2610.33438v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-24T04:27:14+00:00",
+      "summary_raw": "Compiling implied volatility (IV) surfaces and forecasting derivative risk from high-frequency equity and options feeds requires addressing contract heterogeneity, schema shifts, volatility clustering, and non-stationary trading activity. Using a split-adjusted NVIDIA (NVDA) equity and options panel (2018-2025), this study integrates finite-population survey sampling, tempered inverse-probability sequence learning, and causal activity clocks. Cross-sectional surface accuracy depends on matching the sampling design to the target functional. In longitudinal LSTM sequence training, PPS and Neyman designs retain more tail-volatility windows than simple random sampling. Out-of-sample evaluation shows short-horizon prices are not forecastable beyond a random walk with drift, whereas forward IV shows descriptive mean-reversion skill concentrated in a few post-shock reversal sessions, with sequence models not beating a linear HAR-IV benchmark. Across a 6.3x price expansion, rolling volume and dollar clocks stabilize bar rates and compress intraday return kurtosis beyond diurnal scaling.",
+      "score": 11,
+      "summary_cn": "论文以 2018-2025 年拆股调整后的英伟达股票与期权高频面板为对象，把抽样调查设计、逆概率加权序列学习与因果活动时钟结合起来构建并预测隐含波动率曲面。结论颇为“泼冷水”：短端价格不可预测，LSTM 等序列模型跑不赢线性 HAR-IV 基准，IV 的均值回复技能集中在少数冲击后反转时段且聚类检验下不显著；而成交量/成交额时钟能显著稳定 bar 速率、压缩日内收益峰度。",
+      "why_cn": "它为期权 IV 建模提供了诚实的基准对照，也提醒复杂序列模型在高频衍生品预测中的真实增益有限。",
+      "id": "b1050cabb9e7",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: feat: agentRobin brokerage bridge (--account) ROBIN-1689",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1614",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T14:58:45+00:00",
+      "summary_raw": "## Summary - `tradingagents/brokerages/agentrobin.py` loads paper + live portfolios from agentRobin CLI/HTTP bridge - CLI `--account FakeAcct.01` (or Schwab/RH ids) feeds PortfolioContext into analysis - Docs: `docs/AGENTROBIN_BRIDGE.md` - Depends on klepsydra/agentRobin TradingAgents bridge (ROBIN-",
+      "score": 10,
+      "summary_cn": "TradingAgents 新增 agentRobin 券商桥接模块，可通过 CLI/HTTP 同时加载模拟盘与实盘持仓，并用 `--account` 参数把指定账户（含 Schwab、Robinhood 账户标识）注入 PortfolioContext 供分析代理使用。这意味着 AI 交易代理能直接读取真实券商侧的仓位状态进行分析决策。",
+      "why_cn": "它把 LLM 交易代理从“纸上谈兵”向真实券商账户连接推进了一步，是实盘化落地的关键工程件。",
+      "id": "111f7fb71da8",
+      "highlights": [
+        "quant x ai 交叉",
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] Release: TradingAgents v0.7.1",
+      "url": "https://github.com/TauricResearch/TradingAgents/releases/tag/v0.7.1",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:43:04+00:00",
+      "summary_raw": "Decisions are scored only on final closes and settle across long market holidays, a model's unpadded date no longer reads filings made after the run date, and fixes to portfolios, prices, SEC statements, reports, Azure and Claude settings. ## Upgrading from 0.7.0 - Docker images no longer include `.env.enterprise`. For Azure OpenAI in Docker, put its keys in `.env`. ## Fixed - A date a model passe",
+      "score": 9,
+      "summary_cn": "TradingAgents v0.7.1 发布：决策评分只按最终收盘口径计算并可跨长假结算；修复了模型在无前缀日期下读到运行日之后 SEC 文件的前视偏差；同时修复组合、价格与 SEC 声明相关的多处问题。这些修正直接关系到回测的公正性与数据时点一致性。",
+      "why_cn": "前视偏差与时间口径修正是所有 AI 量化回测可信度的底线，值得对照自查自己的流水线。",
+      "id": "0af115fb73c5",
+      "highlights": [
+        "quant x ai 交叉",
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: feat: add isolated GBP paper stock portfolio with AI ratings and tests",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1560",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:08+00:00",
+      "summary_raw": "",
+      "score": 9,
+      "summary_cn": "该 PR 为 TradingAgents 增加一个隔离的英镑（GBP）股票模拟组合，附带 AI 评级与测试用例。隔离设计便于单独评估特定市场/币种下代理的决策质量，而不干扰主组合。",
+      "why_cn": "多币种隔离模拟盘是验证 AI 交易代理跨市场泛化能力的实用基础设施。",
+      "id": "6a7f91412f67",
+      "highlights": [
+        "quant x ai 交叉",
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Weekend Crypto Volatility and Monday Market Risk",
+      "url": "https://arxiv.org/abs/2610.35702v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-26T16:27:42+00:00",
+      "summary_raw": "Cryptocurrencies trade continuously while major traditional markets close over the weekend. We examine whether weekend cryptocurrency volatility predicts Monday variance in equity, commodity and fixed-income markets. Using daily range-based variance measures for Bitcoin, Ether, XRP, the S&P 500, gold and a US Treasury ETF over 2017-2026, we augment heterogeneous autoregressive models with a common weekend cryptocurrency factor. Predictive content is weak before 2024 but significant thereafter. In the post-2024 sample, a one-standard-deviation increase in the factor is associated with 27-54% higher fitted Monday variance. Adding the factor reduces out-of-sample QLIKE losses by 11-22%, although statistical evidence varies across markets. Friday cryptocurrency volatility does not reproduce the result, and coin-specific variation adds no significant predictive information beyond the common factor. An endogenous procedure estimates a break in late 2023, during growing anticipation of US spot-Bitcoin ETF approval. However, ETF-flow interactions provide no evidence of amplification through greater measured Monday flow activity, leaving the mechanism unresolved.",
+      "score": 8,
+      "summary_cn": "利用 2017-2026 年比特币、以太坊、XRP 与标普500、黄金、美债 ETF 的日度区间方差，论文发现周末加密货币共同波动因子对周一传统市场方差有显著预测力——但仅存在于 2024 年之后：因子每上升一个标准差，周一拟合方差高出 27-54%，样本外 QLIKE 损失降低 11-22%。断点估计指向 2023 年末现货比特币 ETF 预期升温期，但 ETF 资金流交互并未证实传导机制。",
+      "why_cn": "周末加密波动已成为周一多资产风险建模的新变量，可直接嵌入 HAR 类波动预测模型。",
+      "id": "69a3bebfdbed",
+      "highlights": []
+    },
+    {
+      "title": "Cross-Bond Panel Learning for Next-Day Price Forecasting of Chinese Convertible Bonds: A Reality Check",
+      "url": "https://arxiv.org/abs/2610.33453v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-24T05:15:41+00:00",
+      "summary_raw": "Recent advances in financial machine learning have prompted growing interest in applying deep neural networks to convertible bond valuation and forecasting. This paper provides a comprehensive empirical reality check on cross-bond panel learning for Chinese convertible bonds. Using a daily panel of 73,806 observations across 100 A-share convertible bonds from 2022 to 2025, we evaluate whether cross-bond neural architectures reliably outperform the random walk under strict temporal splitting, boundary purging, fold-specific preprocessing, and dependence-aware inference. On the 29,514-observation holdout, the random walk achieves an RMSE of 2.3577 CNY. Five-seed ensembles of small and large price-change MLPs yield RMSEs of 2.3619 and 2.3645 CNY, with negative out-of-sample R^2 values (-0.0035 and -0.0057). Ten-day circular block-bootstrap intervals span zero. Although cross-bond pooling provides a variance-stabilizing shrinkage effect over single-bond estimation (lowering test RMSE for 79 of 90 individual bonds), it fails to produce an aggregate forecast advantage over persistence. Error decomposition reveals that five highly volatile, clause-sensitive bonds account for 74.4% of the model's total excess squared error. Without contemporaneous equity market information or explicit contractual event conditioning, deep panel architectures do not deliver incremental next-day predictability over persistence.",
+      "score": 6,
+      "summary_cn": "论文对中国 A 股 100 只可转债 7.4 万条日度样本做了一次严格的“现实检验”：在时间切分、边界清洗与依赖感知推断下，跨债券深度面板模型的次日价格预测 RMSE 反而劣于随机游走（样本外 R² 为负）。跨债券池化虽有方差稳定作用（90 只中 79 只个券误差下降），但整体无增量预测力，74.4% 的超额误差集中在 5 只高波动、条款敏感券上。",
+      "why_cn": "这是做债券/可转债 ML 策略必读的阴性结果，示范了严格评估如何戳破深度学习的预测幻觉。",
+      "id": "d994cf7fde37",
+      "highlights": []
+    },
+    {
+      "title": "Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book",
+      "url": "https://arxiv.org/abs/2610.34787v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-26T03:31:11+00:00",
+      "summary_raw": "Prices cluster at round numbers, a pattern often interpreted as evidence that these levels act as price barriers. This pattern also admits a mechanical explanation: more liquidity rests there, and prices take longer to leave deeper queues. Limit order book data allow us to distinguish these mechanisms through a tick-grid framework in which local time counts departures and level-wise volatility reflects the departure hazard. Using data for five Nasdaq stocks throughout 2025, we find that round levels attract more liquidity but do not exhibit longer depth-adjusted durations. Intel and SoFi show directional effects, with departures biased away from round levels.",
+      "score": 6,
+      "summary_cn": "价格聚集在整数关口常被解读为“整数是心理屏障”，本文用 2025 年五只纳斯达克股票的限价订单簿数据，在跳动网格框架下以局部时间计数离开事件、用深度条件化风险率区分两种机制。结果发现：整数位确实吸引更多流动性，但经深度调整后的停留时间并不更长，即“屏障效应”主要是排队深度的机械结果；英特尔与 SoFi 还呈现背离整数位的方向性偏离。",
+      "why_cn": "对市场微观结构建模者而言，它纠正了对整数关口效应的常见误读，影响挂单位置与执行算法设计。",
+      "id": "6e72d40ff4e9",
+      "highlights": []
+    },
+    {
+      "title": "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain",
+      "url": "https://arxiv.org/abs/2610.35738v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-26T16:55:17+00:00",
+      "summary_raw": "Demand on blockchain-based marketplaces arrives in bursts and at a high rate. We measure it on Robinhood Chain, a layer-2 blockchain that quickly became a venue for trading tokenized equities and memecoins. We collected the data from every block of its first three active months and more than 50 million Uniswap swaps that occurred during bursty periods. We find that a burst trades about as many pools as a quiet period, mostly different ones, and trades them harder, on top of elevated demand that accumulated for hours. With the bursts aligned on their peaks, the median peak is 2.5 times the usual load. Both the rise and the fall of the demand are described by the sum of two exponential functions with different timescales. Against a matched quiet period, a burst has 1.05 times the pools, 1.40 times the trades, and 1.21 times the senders. We use two models to explain the arrival of bursts: externally triggered cascades and self-excitation. The former fits the data relatively better. Inside a burst, the entry of each trader into a pool is followed for about 24 seconds by more entries than the existing traders predict.",
+      "score": 6,
+      "summary_cn": "作者测量了 Robinhood Chain（代币化股票与模因币交易热区）上线头三个月全部区块与 5000 万笔 Uniswap 交换中的需求爆发：爆发峰值中位数为日常负载的 2.5 倍，升降均可由快慢两个指数函数叠加刻画；相比匹配的对照时段，爆发期交易池数量仅多 5%，但交易笔数多 40%、发送者多 21%。两种爆发成因模型中，“外部触发级联”比自激励拟合更好；爆发内新交易者入场后约 24 秒内会引发超额跟随入场。",
+      "why_cn": "对链上做市与 gas/拥堵交易者，这份需求爆发的形态学测量提供了可直接参数化的冲击模型。",
+      "id": "30909ea2ee53",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: harden: add path validation in files.py (CWE-22)",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1606",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:05+00:00",
+      "summary_raw": "User-controlled input used in file path for open() without sanitization. This can allow path traversal attacks to read arbitrary files. This is defence-in-depth at `tradingagents/dataflows/files.py:46` rather than a vulnerability I can show is exploitable here — it makes the failure mode explicit an",
+      "score": 5,
+      "summary_cn": "该加固 PR 修复 TradingAgents 中 files.py 的路径校验缺陷（CWE-22）：用户可控输入此前未经净化直接用于 open() 的文件路径，可能导致路径穿越读取任意文件。修复在 dataflows/files.py 第 46 行处增加纵深防御式校验。",
+      "why_cn": "当 AI 代理能读写文件系统时，路径穿越类漏洞就是实盘安全的现实威胁，必须系统性堵上。",
+      "id": "7736c1cc4e9a",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] Issue: Changes to operating system",
+      "url": "https://github.com/TauricResearch/TradingAgents/issues/1551",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:23+00:00",
+      "summary_raw": "### Ticker and market 928 Wichita Kansas ### Analysis date 10-19-26 ### Which data Fundamentals or statements ### What the report shows, and what is correct Change to my policies on my 25 fe ### Version 2022",
+      "score": 5,
+      "summary_cn": "一条用户反馈 Issue：报告环境或运行配置变更后，基本面/财务报表数据的展示与预期不符（用户描述较零散，涉及操作系统/策略设置变化）。维护价值在于提醒：数据展示层的“正确答案”依赖运行环境上下文。",
+      "why_cn": "它提示量化工具用户环境差异会引发数据口径歧义，排查问题时应先核对运行上下文。",
+      "id": "2a504e62742c",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: PR1 ",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1573",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:19+00:00",
+      "summary_raw": "we have no conflict when it comes to the main source",
+      "score": 5,
+      "summary_cn": "一个仅说明“与主源无冲突”的极简 PR，无实质技术描述。属于社区贡献流程中的常规合并确认类提交。",
+      "why_cn": "信息含量低，仅作为项目协作活跃度的旁证。",
+      "id": "a73c1d1a40f5",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: Feature/requirements dev",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1540",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:16+00:00",
+      "summary_raw": "",
+      "score": 5,
+      "summary_cn": "该 PR 补充/调整开发环境依赖（requirements-dev），无正文描述。属于项目工程维护类改动，保障开发环境一致性。",
+      "why_cn": "依赖治理对可复现的量化研究环境重要，但本条信息量有限。",
+      "id": "6f0bbdd6ed83",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: commit: criar arquivo de arquitetura",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1559",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:12+00:00",
+      "summary_raw": "",
+      "score": 5,
+      "summary_cn": "一个葡语提交（criar arquivo de arquitetura，即“创建架构文档”），为项目补充架构说明文件。有助于新贡献者理解 TradingAgents 的模块结构。",
+      "why_cn": "架构文档降低了二次开发门槛，对想基于该框架定制交易代理的团队有参考价值。",
+      "id": "d750040a18e7",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: Add FMP fundamentals vendor: point-in-time statements and a live overview (stacked on #1575)",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1576",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:45:02+00:00",
+      "summary_raw": "> **Stacked on #1575.** This branch builds on #1575's FMP vendor, so until #1575 merges the diff here also shows its two commits. Only the last commit (`5aced93`) is new. Once #1575 lands, this PR shrinks to that one commit. ## What Financial Modeling Prep as a fundamentals vendor for the four `fund",
+      "score": 5,
+      "summary_cn": "在 #1575 的 FMP 行情厂商基础上，该 PR 为 TradingAgents 增加 FMP 基本面数据厂商：提供时点一致（point-in-time）的财务报表与实时概览接口。时点一致性保证回测中不会用到发布前不可得的数据。",
+      "why_cn": "point-in-time 基本面数据是避免财务因子前视偏差的关键，这正是量化基本面策略最易踩的坑。",
+      "id": "420243f9b702",
+      "highlights": []
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: Add FMP and Crypto.com market-data vendors with env-selectable vendor chains",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/1575",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:44:59+00:00",
+      "summary_raw": "## What Two new market-data vendors for `get_stock_data` and `get_indicators`, plus a way to choose vendor chains from the environment. - **`fmp`**: Financial Modeling Prep daily OHLCV from `/stable/historical-price-eod/full`. That one endpoint serves stocks, indices, FX and commodities; only the sy",
+      "score": 5,
+      "summary_cn": "该 PR 为 TradingAgents 的 get_stock_data 与 get_indicators 新增两个行情数据厂商——FMP（Financial Modeling Prep 日线 OHLCV）与 Crypto.com，并支持通过环境变量选择厂商链。多厂商冗余与可配置切换提升了数据获取的健壮性。",
+      "why_cn": "可插拔的数据厂商链是交易代理工程化的刚需，单一数据源故障不再致命。",
+      "id": "4f67c3e3abf0",
+      "highlights": []
+    }
+  ]
+}
