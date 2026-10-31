@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-31",
+  "total": 20,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": true,
+      "count": 15,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 403",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/list/q-fin/recent"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22trading%22+OR+all%3A%22financial+market%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL%29&sortBy=submittedDate&sortOrder=descending"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns",
+      "url": "https://arxiv.org/abs/2610.39205v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T02:28:10+00:00",
+      "summary_raw": "Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SAE with common benchmarks in a time-ordered evaluation. We find consistently lower volatility in SAE ",
+      "score": 13,
+      "summary_cn": "本文将稀疏自编码器（SAE）用作资产定价中的隐性多元化正则器：用少量活跃特征刻画众多资产的日收益，兼顾因子可解释性与组合风险。在加密货币截面上以股票为对照、按时间顺序评估，发现 SAE 组合波动率持续更低。",
+      "why_cn": "把可解释 AI（SAE）直接转化为更低波动的组合构建方法，是 quant×ai 交叉落地的典型样本。",
+      "id": "2dc5a846a898",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Information Flow and Market Risk: Transformer-Based Evidence on Sentiment and Volatility Dynamics",
+      "url": "https://arxiv.org/abs/2610.39636v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T08:57:51+00:00",
+      "summary_raw": "This study examines whether transformer-based financial news sentiment improves equity volatility forecasts beyond conventional market-based predictors. Using data for eleven US stocks, we compare volatility persistence models with specifications incorporating the VIX, AAII investor sentiment, and news sentiment extracted using ModernFinBERT. The forecasting target is annualized volatility constructed from future averages of trailing 252-session Yang-Zhang estimates, evaluated at horizons of 1, 5, and 22 trading days. Models are assessed through walk-forward testing with expanding and rolling ",
+      "score": 12,
+      "summary_cn": "研究检验基于 Transformer 的财经新闻情绪（ModernFinBERT）能否在 VIX、AAII 等传统变量之外改进美股波动率预测。以 Yang-Zhang 估计构造 1/5/22 日年化波动率目标，用扩展与滚动窗口 walk-forward 评估十一只美股。",
+      "why_cn": "给出 LLM 情绪因子在波动率预测中的严谨样本外检验框架，可直接复用于风控与期权策略。",
+      "id": "4d252265ef5e",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
+      "url": "https://arxiv.org/abs/2610.39293v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-29T03:42:22+00:00",
+      "summary_raw": "Autoregressive (AR) image generators are powerful in principle but inflexible in practice: training with a fixed raster-scan order hardcodes a single factorization of the image distribution into the model, leaving it unable to inpaint, outpaint, or edit at inference time. Existing solutions, including the modern discrete-diffusion family, train from scratch on a mixture of token orderings, paying roughly 3x the compute of standard raster-scan training; discrete diffusion further sacrifices compatibility with the AR inference ecosystem (KV caching, vLLM) by construction. We argue that this cost",
+      "score": 10,
+      "summary_cn": "提出解锁预训练自回归图像模型任意顺序生成能力的方法，使其无需从头训练即可支持修复、扩图与编辑。相比离散扩散约 3 倍训练算力的代价，该方案保留 KV cache、vLLM 等 AR 推理生态兼容性。",
+      "why_cn": "虽非金融论文，但其低成本改造预训练模型的思路对复用金融大模型有方法论借鉴意义。",
+      "id": "d815bd06e119",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Explainable and Adaptive Machine Learning for Fraud Risk Detection in Bangladesh's Digital Banking Ecosystem",
+      "url": "https://arxiv.org/abs/2610.39556v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-29T07:57:41+00:00",
+      "summary_raw": "The rapid expansion of digital banking and mobile financial services creates growing challenges for fraud detection, particularly under severe class imbalance and operational constraints. This study presents an explainable and adaptive machine-learning framework integrating chronological evaluation, leakage-conscious feature engineering, probability calibration, SHAP-based explainability, and adaptive risk prioritization. Experiments use the synthetic PaySim mobile-money benchmark and compare Logistic Regression, Random Forest, XGBoost, and LightGBM. XGBoost achieved the strongest fixed-thresh",
+      "score": 9,
+      "summary_cn": "针对数字银行欺诈检测的类别极度不平衡问题，构建了融合时间顺序评估、防泄漏特征工程、概率校准、SHAP 可解释性与自适应风险分级的 ML 框架。在 PaySim 基准上比较 LR/RF/XGBoost/LightGBM，XGBoost 固定阈值下表现最强。",
+      "why_cn": "防泄漏与概率校准的工程细节正是量化建模最容易踩坑之处，值得对照自查。",
+      "id": "985b8de25562",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] Release: TradingAgents v0.7.1",
+      "url": "https://github.com/TauricResearch/TradingAgents/releases/tag/v0.7.1",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-27T08:43:04+00:00",
+      "summary_raw": "Decisions are scored only on final closes and settle across long market holidays, a model's unpadded date no longer reads filings made after the run date, and fixes to portfolios, prices, SEC statements, reports, Azure and Claude settings. ## Upgrading from 0.7.0 - Docker images no longer include `.env.enterprise`. For Azure OpenAI in Docker, put its keys in `.env`. ## Fixed - A date a model passe",
+      "score": 9,
+      "summary_cn": "热门多智能体交易框架 TradingAgents 发布 v0.7.1：回测决策改为仅按最终收盘价评分并跨长假期结算，修复模型读取运行日之后公告的未来函数问题，以及组合、价格、SEC 财报、Azure/Claude 配置等多项缺陷。",
+      "why_cn": "修复未来函数（lookahead bias）直接关系到所有 LLM 交易智能体回测结论的可信度，使用者应尽快升级。",
+      "id": "0af115fb73c5",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "[TauricResearch/TradingAgents] PR: feat(etf): improve ETF analysis with holdings, drill-down, and risk guidance",
+      "url": "https://github.com/TauricResearch/TradingAgents/pull/819",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-10-30T14:38:16+00:00",
+      "summary_raw": "## Summary This PR improves ETF analysis by routing ETF tickers through fund-specific profile, holdings, and constituent drill-down tools instead of treating ETFs like operating companies. ETFs do not have company-style income statements, balance sheets, cash flows, or insider transactions. This cha",
+      "score": 9,
+      "summary_cn": "TradingAgents 的新 PR 为 ETF 分析引入专属路由：ETF 不再按普通公司处理，改走基金画像、持仓与成分股下钻工具，并补充风险提示。因为 ETF 本身没有公司式的三大报表与内部人交易数据。",
+      "why_cn": "用 LLM 分析 ETF 是常见需求，该改动提示了工具路由设计中资产类型差异这一关键陷阱。",
+      "id": "873f10fffa1f",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 10/27/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10272026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-10-28T05:15:05+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Tuesday, 10/27/2026. To see our most recent links, visit the Quant Mashup. Read on readers! The Part Time Trader Part 5: Half a Million Backtests & a Coin Flip [Algorithmic Advantage] Half a million tests can map an opportunity or manufacture a winner; […] The post Recent Quant Links from Quantocracy as of 10/27/2026 appeared first on Quantocracy .",
+      "score": 7,
+      "summary_cn": "Quantocracy 10 月 27 日量化链接汇总，头条为「兼职交易员系列之五：五十万次回测与一次抛硬币」，讨论海量回测下多重检验导致的虚假发现问题。另含多篇量化策略与研究方法文章。",
+      "why_cn": "五十万次回测与多重比较偏差正是策略过拟合的核心议题，适合做回测纪律的警示读物。",
+      "id": "4e83e17b282b",
+      "highlights": []
+    },
+    {
+      "title": "Recent Quant Links from Quantocracy as of 10/24/2026",
+      "url": "https://quantocracy.com/recent-quant-links-from-quantocracy-as-of-10242026/",
+      "source": "Quantocracy",
+      "side": "quant",
+      "published": "2026-10-25T05:15:05+00:00",
+      "summary_raw": "This is a summary of links recently featured on Quantocracy as of Saturday, 10/24/2026. To see our most recent links, visit the Quant Mashup. Read on readers! Shorting Leveraged ETFs: Role of Borrowing Costs and Rebalancing in Volatility-Decay Strategies [Quantpedia] Leveraged ETFs provide amplified exposure to an underlying index, but their daily reset mechanism creates […] The post Recent Quant Links from Quantocracy as of 10/24/2026 appeared first on Quantocracy .",
+      "score": 7,
+      "summary_cn": "Quantocracy 10 月 24 日量化链接汇总，头条来自 Quantpedia：做空杠杆 ETF 策略中借券成本与每日再平衡对波动率损耗收益的影响。杠杆 ETF 每日重置机制会产生结构性损耗，但做空端成本会侵蚀收益。",
+      "why_cn": "做空杠杆 ETF 吃波动损耗是经典策略，本文提醒需把借券成本纳入可行性测算。",
+      "id": "1a6c93f5192d",
+      "highlights": []
+    },
+    {
+      "title": "Comparing tail forecasts: the number of exceedances is the sample size",
+      "url": "https://arxiv.org/abs/2610.40366v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T16:17:30+00:00",
+      "summary_raw": "When two forecasts of a tail, such as prediction intervals at high coverage, extreme quantiles or expected shortfall (ES), are compared by a consistent score, the score difference is known in advance except on the days on which the outcome falls beyond a forecast. The number of these exceedances, not the number of observations, is the effective sample size. For intervals at miscoverage level $α$, the number of observations a comparison needs grows like $1/α$ while the number of exceedances it needs does not, and for some pairs of forecasts no test can do better. A confidence sequence that is v",
+      "score": 7,
+      "summary_cn": "比较两个尾部预测（高置信区间、极端分位数或 ES）时，评分差异只在结果越过预测值的日子才不确定，因此有效样本量是超越次数而非观测数。在误判水平 α 下，所需观测数按 1/α 增长，而所需超越次数不增长。",
+      "why_cn": "直接回答了 VaR/ES 回测要跑多久才有统计功效的问题，对风险模型验证极具实操价值。",
+      "id": "f995927f6246",
+      "highlights": []
+    },
+    {
+      "title": "Strong rate for one-dimensional driftless continuous strict local martingales",
+      "url": "https://arxiv.org/abs/2610.39896v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T12:07:27+00:00",
+      "summary_raw": "For one-dimensional strict local martingales of the form $\\mathrm{d} X_t=σ(X_t) \\mathrm{d} W_t$ starting from $X_{0}=x_{0}>0$, we prove the strong rate $\\mathbb{E}\\left[|X^h_N-X_T|\\right] \\lesssim h^{\\min\\{θα,\\frac{1}{2}\\}}$ for a discrete scheme~$X^h$ truncated at a level $h^{-α}$, with time step~$h$, as $h\\downarrow 0$, where~$θ$ depends on the truncation property. For the CEV model $σ(x)\\equiv x^{1+γ}$ in particular, the rate is~$\\frac{1}{2}$ for any $γ\\in (0,1)$ (up to a logarithmic pre-factor at $γ=\\frac{1}{2}$).",
+      "score": 7,
+      "summary_cn": "证明一维无漂移严格局部鞅 dX=σ(X)dW 在截断离散格式下的强收敛速率 h^min{θα,1/2}。对 CEV 模型 σ(x)=x^(1+γ)，任意 γ∈(0,1) 均可达 1/2 阶速率（γ=1/2 处仅差对数因子）。",
+      "why_cn": "为 CEV 类波动率模型的数值模拟给出明确误差界，衍生品定价与路径模拟可据此选步长。",
+      "id": "0d1a23945e48",
+      "highlights": []
+    },
+    {
+      "title": "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries",
+      "url": "https://arxiv.org/abs/2610.38631v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-28T10:48:32+00:00",
+      "summary_raw": "Financial assistants answer questions that sound factual but depend on what the user leaves unsaid: what a data figure measures, which product variant is meant, and the investor's situation and the rules that apply. An assistant that ignores these can still answer with a real number from its data, one that answers a different question. We call this frame collapse. We study it in Indian mutual funds, where product variants and tax rules are formally defined, so the correct answer can be computed for every reading. One study tests each challenge. Given an ambiguously labelled figure, models used",
+      "score": 7,
+      "summary_cn": "提出「框架坍缩」概念：金融助手面对信息不全的问题时，常无视歧义直接用真实数据给出一个回答了错误问题的数字。以印度公募基金为试验场（产品份额类别与税制定义严格），系统测试各模型在歧义标注数据下的表现。",
+      "why_cn": "任何用 LLM 做投研问答的人都应警惕这种「数字正确、问题错误」的静默失败模式。",
+      "id": "840eca045d6a",
+      "highlights": []
+    },
+    {
+      "title": "Negative Convexity in Pass-Through MBS: Mechanisms and Conditions",
+      "url": "https://arxiv.org/abs/2610.38275v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-28T04:44:29+00:00",
+      "summary_raw": "This paper investigates the mechanisms and conditions underlying negative convexity in pass-through mortgage-backed securities (MBSs) backed by fixed-rate mortgages. We first derive an exact decomposition of MBS prices into three components: the present value of interest-rate-independent cash flows, the present value of principal repaid early through interest-rate-dependent prepayments, and an interest rate option component capturing the reduction in future cash flows due to prepayments. Under a first-order approximation, the latter two components resemble portfolios of floorlets and Asian-sty",
+      "score": 7,
+      "summary_cn": "推导固定利率过手 MBS 价格的精确三分量分解：利率无关现金流现值、提前偿付本金现值、以及提前偿付削减未来现金流的利率期权分量。一阶近似下后两者类似 floorlet 与亚式期权组合，由此刻画负凸性的机制与成立条件。",
+      "why_cn": "MBS 负凸性分解对利率对冲与固收组合久期管理是基础性工具。",
+      "id": "a8ab478c761e",
+      "highlights": []
+    },
+    {
+      "title": "Exponential Convergence of the Lifted Gradient Flow of the Bass Functional",
+      "url": "https://arxiv.org/abs/2610.40404v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T16:36:32+00:00",
+      "summary_raw": "We establish multidimensional exponential convergence of the lifted Bass gradient flow in martingale optimal transport. Let $μ\\le_{cx}ν$ be an irreducible pair, with compact convex target support, source support strictly inside the target support, and target density bounded above and bounded away from zero almost everywhere on its interior. For every bounded $σ(X)$-measurable initial state, the flow converges exponentially in $L^2$ to the global minimizer with the prescribed mean, and the functional value gap decays exponentially. Both bounds hold at every nonnegative time with the exact initi",
+      "score": 6,
+      "summary_cn": "在鞅最优输运框架下建立提升 Bass 梯度流的多维指数收敛性：在不可约对与紧凸目标支撑等条件下，流在 L2 意义下指数收敛到给定均值的全局极小点，泛函值缺口亦指数衰减。",
+      "why_cn": "鞅最优输运是模型无关衍生品定价与稳健对冲的数学底座，收敛速率结果为其算法化提供保证。",
+      "id": "ea6eba9effff",
+      "highlights": []
+    },
+    {
+      "title": "The Generalised Kessler Syndrome and the Persian Gulf",
+      "url": "https://arxiv.org/abs/2610.40129v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T14:21:42+00:00",
+      "summary_raw": "The term Kessler syndrome was coined for a runaway orbital cascade creating a high-density debris field. The idea is generalised and applied to supply chains. An additive channel enables failures to generate further failures; a subtractive channel erodes the capacity to contain and restore. When damage outpaces repair, failure becomes irreversible and the system settles into a new state. Supplies connect the theory to its application. Stocks insulate subsystems from one another, and their exhaustion exposes dependencies. For the Persian Gulf states, restrictions on maritime supplies from sprin",
+      "score": 6,
+      "summary_cn": "将凯斯勒综合征（轨道碎片级联失控）推广到供应链：加性通道让故障诱发新故障，减性通道侵蚀修复能力，当破坏超过修复时系统不可逆地进入新状态。并以波斯湾海运供给受限为案例，分析库存耗尽后依赖关系的暴露。",
+      "why_cn": "为地缘冲击下的供应链级联风险提供可量化建模思路，可用于商品与航运相关策略的情景分析。",
+      "id": "3686d1d56afe",
+      "highlights": []
+    },
+    {
+      "title": "Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana",
+      "url": "https://arxiv.org/abs/2610.39458v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T06:29:11+00:00",
+      "summary_raw": "We study coordinated groups of wallets on a bonding-curve launchpad (pump.fun on Solana), using a complete record of 200\\,443 token launches, 15\\,854\\,121 curve trades and 51\\,025\\,958 SOL transfers over 88.3 hours. A prospective, multi-channel discovery procedure (co-buying, shared funding, joint signing, transfers, consolidation) yields 23\\,710 wallet groups. Without ground-truth labels we validate them by out-of-sample link prediction, independent non-trading links and a comparison with naive co-buy clustering at equal numbers of flagged tokens: raw clustering collapses into one giant compo",
+      "score": 6,
+      "summary_cn": "对 Solana 上 pump.fun 发射台的前瞻性测量研究：覆盖 88.3 小时内 20 万个代币发行、1585 万笔曲线交易与 5102 万笔 SOL 转账。通过共买、共同资金来源、联合签名等多通道方法识别出 23710 个协同钱包团伙，并用样本外链接预测验证有效性。",
+      "why_cn": "识别链上协同坐庄团伙的方法论对加密做市、链上信号与 meme 币风控有直接参考价值。",
+      "id": "f758edc5c312",
+      "highlights": []
+    },
+    {
+      "title": "Persistence of Bounded Rationality in Financial Markets: An Evolutionary Game-Theoretic Model",
+      "url": "https://arxiv.org/abs/2610.39198v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-29T02:21:24+00:00",
+      "summary_raw": "Classical theory predicts that irrational traders lose money to rational traders and are eventually driven out of the market. Yet noise trading, herding, and heuristic trading persist even in highly developed markets. We model a financial market as an ecology of two trading-behavior types, relatively rational (R) and boundedly rational (N), whose composition evolves under replicator dynamics according to relative performance. Each type's fitness depends on the share of the other type and on frictions. When the interaction is complementary, that is, rational traders profit from the mispricing c",
+      "score": 6,
+      "summary_cn": "用演化博弈模型解释有限理性为何在发达市场中持续存在：市场被建模为理性（R）与有限理性（N）两类交易者构成的生态，按复制动态随相对业绩演化。当相互作用为互补时——即理性交易者从噪声交易造成的错误定价中获利——有限理性可以长期存续。",
+      "why_cn": "为「噪声交易者提供 alpha 来源」提供形式化解释，是理解策略容量与拥挤度的理论补充。",
+      "id": "d785081cc7ae",
+      "highlights": []
+    },
+    {
+      "title": "Mean Field Games of Optimal Trading with an SPDE Model of the Limit Order Book",
+      "url": "https://arxiv.org/abs/2610.38988v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-28T22:13:49+00:00",
+      "summary_raw": "We develop a mean field game model for optimal trading in which the interaction among traders is mediated by the dynamics of the limit order book. The bid- and ask-side order densities are modelled as stochastic processes with values in infinite-dimensional function spaces that solve stochastic partial differential equations (SPDEs) with stochastic order submission rates and multiplicative infinite-dimensional noise. This extends an existing limit order book framework to capture the aggregate impact of the strategic traders on the order densities. Trading activity affects the order densities, ",
+      "score": 6,
+      "summary_cn": "构建以限价订单簿动态为中介的最优交易平均场博弈模型：买卖两侧订单密度被建模为无穷维函数空间上的 SPDE 解，含随机订单提交率与乘性噪声。该框架可刻画策略性交易者对订单密度的聚合影响。",
+      "why_cn": "把市场冲击从外生假设变为博弈内生结果，对大单执行与做市策略的建模是前沿方向。",
+      "id": "777c9aa7ee11",
+      "highlights": []
+    },
+    {
+      "title": "Calibration of Passive Market Impact with a Queue-Sensitive Propagator Model",
+      "url": "https://arxiv.org/abs/2610.38442v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-10-28T08:22:05+00:00",
+      "summary_raw": "We develop a framework for calibrating passive market impact, defined as the price response to liquidity-providing limit orders, in contrast to the impact of liquidity-consuming market orders. We build on the model of Ouazzani Chahdi, Rosenbaum, and Szymanski (arxiv:2412.07461), which combines Hawkes-driven market-order flow with queue-reactive limit-order and cancellation dynamics. Within this model, we show that the price decomposes into a universal propagator term driven by signed order-flow imbalance and a state-dependent correction that captures the dependence of price sensitivity on volu",
+      "score": 6,
+      "summary_cn": "提出被动市场冲击（流动性供给方限价单引起的价格响应）的校准框架，基于 Hawkes 驱动的市价单流与队列反应式限价单/撤单动态模型。证明价格可分解为订单流不平衡驱动的通用传播子项与依赖队列成交量的状态修正项。",
+      "why_cn": "被动冲击校准是做市与挂单策略估计逆向选择成本的关键，给出了可落地的计量方案。",
+      "id": "9e170c483c8a",
+      "highlights": []
+    },
+    {
+      "title": "Sandman: Building and Operating Sandboxes for Agentic Reinforcement Learning on Shared Kubernetes",
+      "url": "https://arxiv.org/abs/2610.39711v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-10-29T09:45:57+00:00",
+      "summary_raw": "Agentic reinforcement learning (RL) often requires repeated tool calls in task-specific environments. A training job may create thousands of these environments in bursts while sharing a cluster with other jobs. We present Sandman, a sandbox service built and operated at Amazon for agent tool execution and evaluation. It serves multiple production agentic RL workloads on shared Kubernetes. A training framework supplies a task image and uses commands and file operations in the returned sandbox. Files and processes persist across calls until the framework releases the environment. Sandman manages",
+      "score": 6,
+      "summary_cn": "Amazon 介绍其生产级智能体 RL 沙箱服务 Sandman：训练任务可在共享 Kubernetes 集群上突发创建数千个任务环境，支持命令执行与文件操作，文件与进程在多次调用间持久化直至释放。已在多条生产智能体 RL 负载上运行。",
+      "why_cn": "智能体 RL 基础设施正在快速成熟，关注 AI 交易智能体训练成本与可行性的读者值得了解。",
+      "id": "5087e2794e58",
+      "highlights": []
+    },
+    {
+      "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+      "url": "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/",
+      "source": "Import AI",
+      "side": "ai",
+      "published": "2026-10-26T12:31:52+00:00",
+      "summary_raw": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now How math could help alignment:…What the “industrialization of mathematics” means for safety…AI safety startup Resolution (formerly known as Sequent, Import AI 461) has published work on […]",
+      "score": 2,
+      "summary_cn": "Jack Clark 的 Import AI 第 478 期：讨论 AI 安全初创 Resolution 关于「数学工业化」对对齐意义的工作，介绍编程能力基准 ProgramBench，以及 Mirendil 项目对 RSI（递归自我改进）含义的实证展示。",
+      "why_cn": "快速把握本周 AI 安全、评测与自我改进三条前沿主线，帮助判断大模型能力演进节奏。",
+      "id": "6352bc5d9cf3",
+      "highlights": []
+    }
+  ]
+}
