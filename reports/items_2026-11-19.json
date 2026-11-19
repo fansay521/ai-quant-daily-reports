@@ -1,0 +1,370 @@
+{
+  "date": "2026-11-19",
+  "total": 20,
+  "source_stats": {
+    "Quantocracy": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='quantocracy.com', port=443): Max retries exceeded with url: /feed/ (Caused by SSLError(SSLEOFE",
+      "type": "rss",
+      "side": "quant",
+      "url": "https://quantocracy.com/feed/"
+    },
+    "Hugging Face Daily Papers": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/daily_papers (Caused by SSLErr",
+      "type": "rss",
+      "side": "ai",
+      "url": "https://huggingface.co/papers/rss"
+    },
+    "r/algotrading": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /r/algotrading/hot.json?limit=25 (C",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/algotrading/"
+    },
+    "r/quant": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /r/quant/hot.json?limit=25 (Caused ",
+      "type": "reddit",
+      "side": "quant",
+      "url": "https://www.reddit.com/r/quant/"
+    },
+    "r/MachineLearning": {
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /r/MachineLearning/hot.json?limit=2",
+      "type": "reddit",
+      "side": "ai",
+      "url": "https://www.reddit.com/r/MachineLearning/"
+    },
+    "arXiv q-fin": {
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "type": "arxiv",
+      "side": "quant",
+      "url": "https://arxiv.org/list/q-fin/recent"
+    },
+    "arXiv AI+Finance 搜索": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "arxiv",
+      "side": "both",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22trading%22+OR+all%3A%22financial+market%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL%29&sortBy=submittedDate&sortOrder=descending"
+    },
+    "Alpha Architect": {
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://alphaarchitect.com/feed/"
+    },
+    "Quantitativo": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "quant",
+      "url": "https://www.quantitativo.com/feed"
+    },
+    "Last Week in AI (替代 The Batch)": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://lastweekin.ai/feed"
+    },
+    "Import AI": {
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "type": "rss",
+      "side": "ai",
+      "url": "https://jack-clark.net/feed/"
+    },
+    "GitHub 项目动态": {
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "type": "github",
+      "side": "both",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    }
+  },
+  "items": [
+    {
+      "title": "Revisiting Equity-Bond Diversification under Tail Risk and Structural Market Change: Evidence from Global ETFs and Model-Implied Option Prices",
+      "url": "https://arxiv.org/abs/2611.21897v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T21:09:18+00:00",
+      "summary_raw": "This study examines thirty equity--bond and multi-asset exchange-traded funds (ETFs) listed in the United States, Canada, and Australia using daily U.S.-dollar returns over 2020--2024. A rolling-window framework compares minimum-variance and Conditional Value-at-Risk (CVaR) portfolio optimization under long-only and long--short constraints against an equally weighted benchmark. Performance is assessed using risk-adjusted measures, downside risk, extreme-tail estimation, and conditional volatility models. Optimized portfolios exhibit lower empirical VaR and CVaR than the benchmark, with long--s",
+      "score": 12,
+      "summary_cn": "本文以 2020–2024 年美、加、澳上市的 30 只股票-债券及多资产 ETF 为样本，在滚动窗口下对比最小方差与 CVaR 组合优化（含纯多头与多空约束）相对等权基准的表现。结果显示优化组合的经验 VaR 与 CVaR 均低于基准，多空约束进一步改善了尾部风险控制，研究还结合极值尾部估计与条件波动率模型评估组合在结构性市场变化下的稳健性。",
+      "why_cn": "为量化配置提供了危机后股债相关性失效背景下，以 CVaR 为核心的组合优化与尾部风控实证参照。",
+      "id": "b260e65d0183",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "European derivatives pricing via constrained Gaussian process regressions",
+      "url": "https://arxiv.org/abs/2611.20746v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T08:51:55+00:00",
+      "summary_raw": "This article develops a Gaussian process method for pricing European derivatives when the underlyings, and the risk factors driving them, follow a multivariate jump-diffusion. A Gaussian process prior on the pricing function is conditioned on the Feynman-Kac partial integro-differential equation at a set of collocation points. The price is returned as a closed-form and differentiable function, allowing the Greeks to be obtained without simulation or finite differences. The jump terms are handled iteratively: the price is computed as the limit of a sequence of boundary value problems. Our main ",
+      "score": 12,
+      "summary_cn": "针对标的及风险因子服从多元跳扩散过程的欧式衍生品定价，本文提出一种受约束高斯过程回归方法：将 GP 先验在配置点上条件化于 Feynman-Kac 偏积分微分方程，并以迭代方式处理跳项。价格以闭式可微函数给出，无需蒙特卡洛或有限差分即可直接获得希腊值。",
+      "why_cn": "GP+PDE 约束的闭式定价能显著加速含跳模型下的期权定价与希腊值计算，适合作为高频定价引擎的替代模型思路。",
+      "id": "84a290596583",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Residual-Guided Lightweight Reinforcement Learning for Risk-Aware Trajectory Selection with a Frozen World Model",
+      "url": "https://arxiv.org/abs/2611.22998v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-11-17T16:12:55+00:00",
+      "summary_raw": "In automated driving, world models provide future scene predictions for evaluating candidate trajectories, but fixed selection rules may not capture scene-dependent trade-offs. We propose a residual-guided reinforcement learning (RL) framework for lightweight trajectory selection with a frozen world model and a fixed candidate bank. The framework uses proximal policy optimization (PPO) to fine-tune a joint policy over candidate selection and bounded trajectory residuals. A context-conditioned ranking network learns candidate preferences from feedback obtained by evaluating local perturbations ",
+      "score": 10,
+      "summary_cn": "本文面向自动驾驶轨迹选择，提出冻结世界模型 + 固定候选库的残差引导轻量强化学习框架：用 PPO 微调候选选择与有界轨迹残差的联合策略，上下文条件排序网络从局部扰动评估反馈中学习候选偏好。该设计在保持推理轻量的同时捕捉场景依赖的权衡。",
+      "why_cn": "其「冻结世界模型评估 + 轻量 RL 做选择」的范式可直接迁移到交易执行与订单路由中的候选策略筛选。",
+      "id": "02d92d4d3d38",
+      "highlights": [
+        "quant x ai 交叉"
+      ]
+    },
+    {
+      "title": "Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility",
+      "url": "https://arxiv.org/abs/2611.22604v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T11:21:48+00:00",
+      "summary_raw": "Options on leveraged ETFs (LETFs) are priced and hedged off the LETF volatility surface, but path-dependent variance drag makes that surface difficult to build consistently with the underlying index smile. We study three methods for constructing it: a closed-form first-order strike remapping, a new conditional-Gamma method, and a two-dimensional joint-law PDE that makes no distributional assumption and serves as the benchmark. The conditional-Gamma method is our main contribution. It conditions on the terminal underlying return, which preserves the state dependence of variance drag that a sing",
+      "score": 8,
+      "summary_cn": "杠杆 ETF（LETF）期权的定价与对冲依赖 LETF 波动率曲面，但路径依赖的方差拖累使其难以与标的指数微笑保持一致。本文比较三种构造方法：闭式一阶行权价重映射、新提出的条件 Gamma 方法，以及作为基准的二维联合分布 PDE；其中条件 Gamma 方法以标的终端收益为条件，保留了方差拖累的状态依赖性。",
+      "why_cn": "直接解决 LETF 期权波动率曲面构造的一致性问题，对期权做市与杠杆产品套利交易有实操价值。",
+      "id": "8989b9648cfe",
+      "highlights": []
+    },
+    {
+      "title": "A Second Order Transport Scheme for Dynamic Portfolio Subspaces under a Varying Risk Metric",
+      "url": "https://arxiv.org/abs/2611.20911v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T11:21:06+00:00",
+      "summary_raw": "We analyze the transport of portfolio exposures between moving subspaces under a varying positive definite risk metric. The reference evolution is the induced connection obtained from the ambient connection of minimum norm in fixed asset coordinates. An explicit expansion of risk weighted Procrustes identifies a leading local error that couples metric deformation with covariant motion normal to the subspace. A rank two construction with an exact continuous solution shows that this term can reduce global accuracy to first order even when the metric commutes with its derivative. Geometric mean a",
+      "score": 8,
+      "summary_cn": "本文研究在变化的风险度量下，组合暴露在移动子空间之间的传输问题，给出二阶传输方案。通过风险加权 Procrustes 的显式展开，识别出耦合度量形变与子空间法向协变运动的主导局部误差项；秩二构造表明即使度量与其导数对易，该项也会将全局精度降为一阶。",
+      "why_cn": "为因子组合在滚动子空间（如 PCA 因子轮动）下的风险度量一致性提供了几何化工具与误差量化。",
+      "id": "4f3a7a63d336",
+      "highlights": []
+    },
+    {
+      "title": "Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers",
+      "url": "https://arxiv.org/abs/2611.23126v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T17:44:41+00:00",
+      "summary_raw": "More historical data can improve estimation while introducing relationships that transfer poorly to current market conditions. We therefore examine how training quantity and historical selection interact with forecast horizon in intraday equity prediction. We deploy twelve configurations which combine four sampling and validation policies with 6, 12 and 24 month training quantities under a fixed cross-sectional Transformer and feature set. A monthly walk-forward experiment produces 264 refits and eight cumulative return forecasts from 5 to 120 minutes. Evaluation covers January 2025 through 20",
+      "score": 7,
+      "summary_cn": "更多历史数据改善估计的同时也会引入难以迁移到当前市场的关系。本文以固定截面 Transformer 与特征集，组合 4 种采样/验证策略与 6/12/24 个月训练量共 12 种配置，做月度滚动前推实验（264 次重拟合），评估 5–120 分钟 8 个预测时长的日内股票收益预测。核心发现是训练数据量与历史选择方式需要和预测时长相匹配。",
+      "why_cn": "回答了深度学习选股/择时中「训练窗口多长、怎么采样」这一最实际的问题，264 次滚动重拟合的实验设计值得借鉴。",
+      "id": "23a922bfe379",
+      "highlights": []
+    },
+    {
+      "title": "An axiomatic foundation for optimized certainty equivalents",
+      "url": "https://arxiv.org/abs/2611.22119v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T03:02:39+00:00",
+      "summary_raw": "Optimized Certainty Equivalents (OCEs) are an important class of risk measures for optimization and risk management that includes the Mean--Variance criterion, Expected Shortfall, the Entropic Risk Measure, and expectation. Despite their importance, economic axioms have not characterized OCEs. We propose a new axiom called Fair-Coin Compensation, which characterizes OCEs together with Strong Risk Aversion and Normalization. We interpret Fair-Coin Compensation through the fair assignment of two losses by a coin toss: transfers between two participants can remove the additional risk created by t",
+      "score": 7,
+      "summary_cn": "优化确定性等价（OCE）是涵盖均值-方差准则、期望短缺（ES）、熵风险测度等的一类重要风险度量，但长期缺乏经济学公理刻画。本文提出「公平硬币补偿」新公理，与强风险厌恶和规范化公理一起完整刻画了 OCE，并通过抛硬币公平分配损失的解释赋予其经济直觉。",
+      "why_cn": "为 CVaR/熵风险等常用组合优化目标提供了公理化基础，有助于理解不同风险目标背后的决策假设。",
+      "id": "a9a1c2da74fb",
+      "highlights": []
+    },
+    {
+      "title": "Neural Marked Point Processes for Health Insurance Claims",
+      "url": "https://arxiv.org/abs/2611.21326v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T16:17:57+00:00",
+      "summary_raw": "Health insurance claims exhibit temporal dependence, as previous claims may provide information about the timing, type and amount of subsequent claims. Such dependencies are difficult to capture with traditional actuarial models based on aggregated claim counts. We investigate a neural marked point process in which a causal Transformer represents individual claim histories and determines type-specific conditional intensities, allowing for self-excitation and interactions between claim types. The framework also incorporates conditional severity distributions, reporting delays and stochastic med",
+      "score": 7,
+      "summary_cn": "健康保险理赔存在时间依赖性，传统基于聚合理赔计数的精算模型难以捕捉。本文用因果 Transformer 表示个体理赔历史，构建神经标记点过程以确定各类理赔的条件强度，允许自激励与理赔类型间交互，并纳入条件严重程度分布、报告延迟与随机医疗通胀。",
+      "why_cn": "神经点过程 + Transformer 的序列建模范式同样适用于交易订单流、信用事件等金融事件序列建模。",
+      "id": "eb9dbd3f9be1",
+      "highlights": []
+    },
+    {
+      "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+      "url": "https://arxiv.org/abs/2611.21262v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T15:34:18+00:00",
+      "summary_raw": "A network in which every bank pays in full can nevertheless admit a self-fulfilling settlement freeze under the same balance-sheet fundamentals. Thus, observing full repayment does not establish the uniqueness or robustness of the payment equilibrium. We derive this result from a precautionary-liquidity choice: banks may delay otherwise feasible payments to insure an interim funding need, trading a positive settlement-discipline cost against the marginal value of retained cash. The optimal reserve is a critical quantile of future liquidity requirements, and the repayment rule nests Eisenberg-N",
+      "score": 7,
+      "summary_cn": "本文证明：即使每家银行都有能力全额支付的金融网络，在相同资产负债表基本面下仍可能出现自我实现的结算冻结——观察到全额偿付并不能证明支付均衡的唯一性或稳健性。该结果源自预防性流动性选择：银行为应对中期资金需求可能推迟本来可行的支付，最优储备是未来流动性需求的临界分位数。",
+      "why_cn": "对理解银行间流动性螺旋与系统性风险传染机制有直接启发，可用于构建流动性危机预警类因子。",
+      "id": "8f6cc6a70cfb",
+      "highlights": []
+    },
+    {
+      "title": "StitchRAG: Constructing Compact and Evidence-Preserving Contexts for RAG with Diffusion-Based Stitching",
+      "url": "https://arxiv.org/abs/2611.22766v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-11-17T13:33:26+00:00",
+      "summary_raw": "Retrieval-augmented generation (RAG) improves factuality by grounding large language models (LLMs) in external evidence. However, long retrieved contexts incur computational overhead and can even hurt performance due to noisy or irrelevant content. We propose \\textsc{StitchRAG}, a framework for constructing compact context in RAG. \\textsc{StitchRAG} builds a faithful, information-dense context while dynamically compressing the retrieved passages. We adapt the size reduction ratio to each passage by formulating a utility maximization trading-off the retained information and computation costs. W",
+      "score": 7,
+      "summary_cn": "RAG 通过外部证据提升 LLM 的事实性，但过长的检索上下文带来计算开销甚至因噪声损害性能。StitchRAG 提出基于扩散式拼接的紧凑上下文构造框架，将压缩率适配到每个段落（形式化为保留信息与计算成本的效用最大化），在动态压缩检索内容的同时保持证据保真。",
+      "why_cn": "对搭建金融研报/新闻 RAG 系统的团队很实用：在控制 token 成本的同时保住关键证据不被压缩丢失。",
+      "id": "cba398e6953a",
+      "highlights": []
+    },
+    {
+      "title": "Integrating market sentiments for stock price prediction: A comparative study of Bi-LSTM and multilayer perceptions",
+      "url": "https://arxiv.org/abs/2611.23057v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T16:51:24+00:00",
+      "summary_raw": "This study investigates the integration of sentiment analysis with machine learning models to forecast stock price movements using the Nvidia Corporation as a case study. Sentiment scores were derived from Nvidia-related financial news headlines using two sentiment analysis tools: FinBERT, a domain-specific tool, and TextBlob, a general-purpose tool. These scores were integrated into predictive frameworks based on bidirectional long short-term memory (Bi-LSTM) networks and multilayer perceptrons (MLPs) developed alongside historical stock price data. This study assesses the predictive performa",
+      "score": 6,
+      "summary_cn": "以英伟达为案例，本文研究将新闻情绪融入机器学习模型预测股价走势：分别用领域专用的 FinBERT 与通用的 TextBlob 从财经新闻标题提取情绪分数，结合历史价格数据输入 Bi-LSTM 与 MLP 预测框架，对比评估不同情绪工具与模型组合的预测表现。",
+      "why_cn": "是「情绪因子 + 深度学习」入门的对照实验参考，FinBERT 与通用工具的对比结论对情绪因子构建有借鉴意义。",
+      "id": "87a99adca40d",
+      "highlights": []
+    },
+    {
+      "title": "Covariate-Indexed Inclusion Probabilities on Unbalanced Panels",
+      "url": "https://arxiv.org/abs/2611.22730v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T13:02:42+00:00",
+      "summary_raw": "We estimate the probability that an item with given covariates belongs to a set when the cross-section changes over time and items and periods are dependent. We propose two convex models whose fitted probabilities are nonnegative by construction and remain valid whatever the dependence between items, for which we establish consistency, finite-sample bounds and limit distributions for serially dependent panels. One suits events of moderate or high probability, the other rare events, and half the disagreement between their fits estimates a lower bound on the misspecification error of the worse f",
+      "score": 6,
+      "summary_cn": "本文估计在截面随时间变化、条目与时期相依的非平衡面板上，给定协变量的条目属于某集合的概率。提出两个凸模型，拟合概率天然非负且对条目间任意相依保持有效，并给出序列相依面板下的一致性、有限样本界与极限分布；两模型分别适配中高概率事件与稀有事件。",
+      "why_cn": "适用于成分股纳入/剔除、ST 预警等「集合隶属概率」预测场景，有限样本保证在金融面板上很稀缺。",
+      "id": "fe681355fb29",
+      "highlights": []
+    },
+    {
+      "title": "Explaining Realized Returns: Roll's $R^2$ 40 Years Later",
+      "url": "https://arxiv.org/abs/2611.22277v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-17T06:25:06+00:00",
+      "summary_raw": "Can we explain asset price movements even with hindsight? Reinterpreting Roll's (1988) AFA Presidential Address, \"$R^2$,\" as a modern empirical exercise, we show that conventional macroeconomic, cash-flow, expectations, and flow variables explain less than 10% (often with negative $R^2$) of monthly U.S. equity return variation out of sample and lack daily observations. We use generative AI to extract reasons stated in Wall Street Journal market summaries while filtering out price-related language. These reasons explain around 30-40% of daily and monthly return variation out of sample. Their co",
+      "score": 6,
+      "summary_cn": "重新审视 Roll 1988 年著名的 R² 问题：传统宏观、现金流、预期与资金流变量在样本外对美股月度收益变动的解释力不足 10%（常为负 R²）。本文用生成式 AI 从《华尔街日报》市场综述中提取「原因」陈述（过滤掉价格相关表述），这些文本原因在样本外可解释约 30–40% 的日度与月度收益变动。",
+      "why_cn": "展示了 LLM 文本抽取在资产定价实证中的增量解释力，是 AI 赋能基本面归因研究的标志性案例。",
+      "id": "9042bbd4b06a",
+      "highlights": []
+    },
+    {
+      "title": "Stochastic Modelling of High-frequency (HF) Crypto Limit Order Book (LOB) with General Compound Marked Hawkes Process",
+      "url": "https://arxiv.org/abs/2611.20839v1",
+      "source": "arXiv q-fin",
+      "side": "quant",
+      "published": "2026-11-16T10:19:43+00:00",
+      "summary_raw": "The paper is devoted to the stochastic modelling of high-frequency crypto Limit Order Book (LOB) with general compound marked Hawkes process (GCMHP). We consider marked Hawkes process in a general form. LLN and FCLTs with stochastic and constant centralization are stated. Numerical example for high-frequency LOB dataset for BTC (bitcoin) based on sources from HF crypto LOB data is presented as well. The novelty of the paper lies in the new LLN and FCLTs for the GCMHP, and in the new application associated with high-frequency (HF) crypto LOB.",
+      "score": 6,
+      "summary_cn": "本文用一般形式的复合标记 Hawkes 过程（GCMHP）对高频加密货币限价订单簿（LOB）进行随机建模，给出随机与常数中心化下的大数定律与泛函中心极限定理。数值示例基于 BTC 高频 LOB 数据，新意在于 GCMHP 的新极限定理及其在高频加密订单簿上的应用。",
+      "why_cn": "为加密货币做市与高频策略的订单流建模提供了带渐近理论保证的 Hawkes 过程工具箱。",
+      "id": "f971323e375e",
+      "highlights": []
+    },
+    {
+      "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+      "url": "https://arxiv.org/abs/2611.23068v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-11-17T16:57:03+00:00",
+      "summary_raw": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at ",
+      "score": 6,
+      "summary_cn": "智能体进化遵循「提议者生成候选 artifacts + 选择器择优」的简单循环，但各方法优劣在不同论文间互有胜负。本文提出「分辨率假说」：进化停滞并非因为方法提不出更好的产物，而是噪声评估无法可靠识别它们。基于 7 种进化方法、6 个模型、超 1000 万次 LLM 调用的实验在多个任务上支持该假说。",
+      "why_cn": "对使用 LLM 自动进化交易策略/因子表达式的团队是重要警示：评估噪声而非生成能力才是瓶颈。",
+      "id": "fdddb4835c60",
+      "highlights": []
+    },
+    {
+      "title": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.23038v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-11-17T16:37:36+00:00",
+      "summary_raw": "Forward-process reinforcement learning adapts diffusion and flow-matching models by re-noising rewarded generations into regression targets. Because negative advantages induce concave updates with unbounded repulsive gradients, existing methods stabilize training using cached predictions from a moving policy copy, yet these anchors also alter what positive feedback teaches the model to fit. We formalize this conflict as anchor coupling: after separating frozen-reference regularizers, affine moving-anchor rules cannot eliminate negative curvature while preserving every positive regression targe",
+      "score": 6,
+      "summary_cn": "前向过程强化学习通过将有奖励的生成重新噪声化为回归目标来适配扩散/流匹配模型，但负优势引发无界排斥梯度的凹更新。本文将现有稳定化技巧的冲突形式化为「锚耦合」：仿射移动锚规则无法在消除负曲率的同时保留所有正向回归目标，并提出优势门控适配方案加以解决。",
+      "why_cn": "扩散模型 RL 后训练的前沿改进，可迁移到基于生成模型的场景生成与数据增强类量化研究。",
+      "id": "3bc2e6427ab6",
+      "highlights": []
+    },
+    {
+      "title": "Is the Illiquidity Premium Really Gone?",
+      "url": "https://alphaarchitect.com/illiquidity-premium/",
+      "source": "Alpha Architect",
+      "side": "quant",
+      "published": "2026-11-13T15:29:00+00:00",
+      "summary_raw": "Liquidity risk, short-sale constraints, and trading implementation are deeply connected. Any attempt to measure or harvest an illiquidity premium should account explicitly for the cost and availability of stock borrowing—not just volume, spreads, or price impact. Is the Illiquidity Premium Really Gone? was originally published at Alpha Architect . Please read the Alpha Architect disclosures at your convenience.",
+      "score": 6,
+      "summary_cn": "Alpha Architect 探讨非流动性溢价是否真的消失：流动性风险、卖空约束与交易实施成本深度关联。文章指出，任何衡量或收割非流动性溢价的尝试都应显式考虑股票借券的成本与可得性，而非仅看成交量、价差或价格冲击。",
+      "why_cn": "提醒多因子构建者：忽略借券成本与卖空可行性会系统性高估非流动性溢价类因子的可实盘收益。",
+      "id": "a93ad930aa78",
+      "highlights": []
+    },
+    {
+      "title": "DDSL: Iterative Self-Labeling for Financial Market States",
+      "url": "https://arxiv.org/abs/2611.22958v1",
+      "source": "arXiv AI+Finance 搜索",
+      "side": "both",
+      "published": "2026-11-17T15:46:40+00:00",
+      "summary_raw": "Financial market states lack a unique ground truth and must therefore be constructed from price data. Conventional labeling methods typically define states independently of the downstream classifier, leaving unresolved whether the resulting labels can be recovered from information available at prediction time. We propose DDSL, an iterative self-labeling framework that couples a price- and grammar-guided Viterbi labeler with a Transformer classifier through model feedback. DDSL constructs a nine-state representation that jointly encodes current and future market trends while retaining structure",
+      "score": 5,
+      "summary_cn": "金融市场状态缺乏唯一真值标签，传统标注方法独立于下游分类器定义状态，无法保证标签在预测时点的信息下可恢复。DDSL 提出迭代自标注框架，将价格与文法引导的 Viterbi 标注器与 Transformer 分类器通过模型反馈耦合，构造同时编码当前与未来趋势的九状态市场表示。",
+      "why_cn": "为「市场状态/regime 识别」这一量化核心问题提供了标注与学习联合优化的新框架，可直接用于择时策略。",
+      "id": "ff82ce5d6880",
+      "highlights": []
+    },
+    {
+      "title": "[microsoft/qlib] PR: fix: ensure time is logged even when exception is raised in logt()",
+      "url": "https://github.com/microsoft/qlib/pull/2194",
+      "source": "GitHub 项目动态",
+      "side": "both",
+      "published": "2026-11-15T17:55:14+00:00",
+      "summary_raw": "## Motivation and Context The `logt` context manager in `qlib/log.py` places `log_cost_time` outside the `try/finally` block. This means if an exception is raised inside a `with TimeInspector.logt():` block, the time is never logged and the time mark pushed onto the stack is never popped, causing a ",
+      "score": 4,
+      "summary_cn": "微软 qlib 的一个修复 PR：log.py 中 logt 上下文管理器把 log_cost_time 放在 try/finally 之外，若 with TimeInspector.logt() 块内抛出异常，耗时永远不会被记录，压栈的时间标记也不会弹出，导致后续日志时间错乱。该 PR 将其移入 finally 保证异常时也能正确记录。",
+      "why_cn": "使用 qlib 做因子研发的团队建议同步此修复，避免实验计时日志在异常时静默丢失。",
+      "id": "c1e9cb568ed9",
+      "highlights": []
+    },
+    {
+      "title": "Last Week (Month) in AI #347 - Nvidia's spy, Anthropic's $1.4T IPO, AI's blue wave",
+      "url": "https://lastweekin.ai/p/last-week-month-in-ai-347-nvidias",
+      "source": "Last Week in AI (替代 The Batch)",
+      "side": "ai",
+      "published": "2026-11-11T14:21:42+00:00",
+      "summary_raw": "Catching up on five weeks: Huang under investigation, Anthropic and OpenAI priced at $1.4T and $1.25T as spending stalls, Anthropic warns it may be nearing recursive self-improvement, Gemini 4 Carbon",
+      "score": 4,
+      "summary_cn": "Last Week in AI 第 347 期（五周合刊）：黄仁勋涉间谍调查风波；Anthropic 与 OpenAI 在一级市场分别被定价 1.4 万亿与 1.25 万亿美元，而 AI 资本开支出现停滞迹象；Anthropic 警告其可能正逼近递归自我改进；另有 Gemini 4 Carbon 等模型动态。",
+      "why_cn": "AI 巨头估值与算力开支拐点信号直接影响 AI 板块及相关科技股的多空判断。",
+      "id": "9a109a2f46a7",
+      "highlights": []
+    }
+  ]
+}
